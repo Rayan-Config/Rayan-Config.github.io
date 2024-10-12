@@ -8,3 +8,4 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns2.gcdn.services:443?security=tls&
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@gns2.gcdn.co:443?security=tls&sni=gns2.gcdn.co&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=8.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G8%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@fr5-speedtest.tools.gcore.com:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=9.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G9%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@pa5-speedtest.tools.gcore.com:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=10.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G10%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns3.gcorelabs.net:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=11.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G10%20-%20443
