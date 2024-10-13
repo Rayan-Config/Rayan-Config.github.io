@@ -8,12 +8,12 @@
     "servers": [
       {
         "tag": "proxyDns",
-        "address": "https://wbhx6oenr0.cloudflare-gateway.com/dns-query",
+        "address": "8.8.8.8",
         "detour": "select"
       },
       {
         "tag": "localDns",
-        "address": "tcp://8.8.8.8",
+        "address": "8.8.4.4",
         "detour": "direct"
       },
       {
