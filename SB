@@ -13,7 +13,7 @@
       },
       {
         "tag": "localDns",
-        "address": "https://223.5.5.5/dns-query",
+        "address": "tcp://8.8.8.8",
         "detour": "direct"
       },
       {
@@ -1531,11 +1531,11 @@
       "type": "vless"
     },
     {
-      "server": "speedtest-fr5.gcore.com",
+      "server": "4.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "4.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1552,11 +1552,11 @@
       "type": "vless"
     },
     {
-      "server": "speedtest-pa5.gcore.com",
+      "server": "5.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "5.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1573,11 +1573,11 @@
       "type": "vless"
     },
     {
-      "server": "ns2.gcorelabs.net",
+      "server": "6.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "6.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1594,11 +1594,11 @@
       "type": "vless"
     },
     {
-      "server": "ns2.gcdn.services",
+      "server": "7.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "7.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1615,11 +1615,11 @@
       "type": "vless"
     },
     {
-      "server": "gns2.gcdn.co",
+      "server": "8.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "8.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1636,11 +1636,11 @@
       "type": "vless"
     },
     {
-      "server": "fr5-speedtest.tools.gcore.com",
+      "server": "9.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "9.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1657,11 +1657,11 @@
       "type": "vless"
     },
     {
-      "server": "pa5-speedtest.tools.gcore.com",
+      "server": "10.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "10.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1678,11 +1678,11 @@
       "type": "vless"
     },
     {
-      "server": "ns3.gcorelabs.net",
+      "server": "11.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "11.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1699,11 +1699,11 @@
       "type": "vless"
     },
     {
-      "server": "ns3.gcdn.services",
+      "server": "12.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "12.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1720,11 +1720,11 @@
       "type": "vless"
     },
     {
-      "server": "gns3.gcdn.co",
+      "server": "13.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "13.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1741,11 +1741,11 @@
       "type": "vless"
     },
     {
-      "server": "ns4.gcorelabs.net",
+      "server": "14.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "14.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1762,11 +1762,11 @@
       "type": "vless"
     },
     {
-      "server": "ns4.gcdn.services",
+      "server": "15.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "15.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1783,11 +1783,11 @@
       "type": "vless"
     },
     {
-      "server": "gns4.gcdn.co",
+      "server": "16.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "16.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1804,11 +1804,11 @@
       "type": "vless"
     },
     {
-      "server": "ns1.gcorelabs.net",
+      "server": "17.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "17.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1825,11 +1825,11 @@
       "type": "vless"
     },
     {
-      "server": "ns1.gcdn.services",
+      "server": "18.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "18.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1846,11 +1846,11 @@
       "type": "vless"
     },
     {
-      "server": "gns1.gcdn.co",
+      "server": "19.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "19.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1867,11 +1867,11 @@
       "type": "vless"
     },
     {
-      "server": "speedtest-fr5.gcore.com",
+      "server": "20.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "20.gcr.dns04.com",
+        "server_name": "gcore.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1888,11 +1888,11 @@
       "type": "vless"
     },
     {
-      "server": "speedtest-pa5.gcore.com",
+      "server": "21.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "21.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -1905,11 +1905,11 @@
       "type": "vless"
     },
     {
-      "server": "ns2.gcorelabs.net",
+      "server": "22.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "22.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -1922,11 +1922,11 @@
       "type": "vless"
     },
     {
-      "server": "ns2.gcdn.services",
+      "server": "23.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "23.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -1939,11 +1939,11 @@
       "type": "vless"
     },
     {
-      "server": "gns2.gcdn.co",
+      "server": "24.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "24.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -1956,11 +1956,11 @@
       "type": "vless"
     },
     {
-      "server": "fr5-speedtest.tools.gcore.com",
+      "server": "25.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "25.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -1973,11 +1973,11 @@
       "type": "vless"
     },
     {
-      "server": "pa5-speedtest.tools.gcore.com",
+      "server": "26.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "26.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -1990,11 +1990,11 @@
       "type": "vless"
     },
     {
-      "server": "ns3.gcorelabs.net",
+      "server": "27.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "27.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2007,11 +2007,11 @@
       "type": "vless"
     },
     {
-      "server": "ns3.gcdn.services",
+      "server": "28.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "28.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2024,11 +2024,11 @@
       "type": "vless"
     },
     {
-      "server": "gns3.gcdn.co",
+      "server": "29.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "29.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2041,11 +2041,11 @@
       "type": "vless"
     },
     {
-      "server": "ns4.gcorelabs.net",
+      "server": "30.gcr.dns04.com",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "30.gcr.dns04.com"
+        "server_name": "gcore.com"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2109,11 +2109,11 @@
       "type": "vless"
     },
     {
-      "server": "seminarsinmcb.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-20.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-20.net"
+        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2126,11 +2126,11 @@
       "type": "vless"
     },
     {
-      "server": "bwdraper.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-25.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-25.net"
+        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2143,11 +2143,11 @@
       "type": "vless"
     },
     {
-      "server": "zmaoz.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-30.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-30.net"
+        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2160,11 +2160,11 @@
       "type": "vless"
     },
     {
-      "server": "seminarsinmcb.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-35.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-35.net"
+        "server_name": "bwdraper.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2177,11 +2177,11 @@
       "type": "vless"
     },
     {
-      "server": "bwdraper.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-40.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-40.net"
+        "server_name": "zmaoz.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2194,11 +2194,11 @@
       "type": "vless"
     },
     {
-      "server": "zmaoz.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-45.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-45.net"
+        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2211,11 +2211,11 @@
       "type": "vless"
     },
     {
-      "server": "seminarsinmcb.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-50.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-50.net"
+        "server_name": "bwdraper.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2228,11 +2228,11 @@
       "type": "vless"
     },
     {
-      "server": "bwdraper.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-55.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-55.net"
+        "server_name": "zmaoz.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2245,11 +2245,11 @@
       "type": "vless"
     },
     {
-      "server": "zmaoz.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-60.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-60.net"
+        "server_name": "zmaoz.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2262,11 +2262,11 @@
       "type": "vless"
     },
     {
-      "server": "zmaoz.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-65.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-65.net"
+        "server_name": "bwdraper.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2279,11 +2279,11 @@
       "type": "vless"
     },
     {
-      "server": "bwdraper.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-70.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-70.net"
+        "server_name": "zmaoz.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2296,11 +2296,11 @@
       "type": "vless"
     },
     {
-      "server": "zmaoz.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-75.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-75.net"
+        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2313,11 +2313,11 @@
       "type": "vless"
     },
     {
-      "server": "seminarsinmcb.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-80.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-80.net"
+        "server_name": "bwdraper.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2330,11 +2330,11 @@
       "type": "vless"
     },
     {
-      "server": "bwdraper.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-85.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-85.net"
+        "server_name": "zmaoz.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2347,11 +2347,11 @@
       "type": "vless"
     },
     {
-      "server": "zmaoz.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-90.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-90.net"
+        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2364,11 +2364,11 @@
       "type": "vless"
     },
     {
-      "server": "seminarsinmcb.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-95.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-95.net"
+        "server_name": "bwdraper.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
@@ -2381,11 +2381,11 @@
       "type": "vless"
     },
     {
-      "server": "bwdraper.faculty.ucdavis.edu",
+      "server": "dr.pezeshkian-100.net",
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "dr.pezeshkian-100.net"
+        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
       },
       "transport": {
         "path": "/?ed=2560",
