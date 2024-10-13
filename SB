@@ -13,7 +13,7 @@
       },
       {
         "tag": "localDns",
-        "address": "8.8.4.4",
+        "address": "local",
         "detour": "direct"
       },
       {
