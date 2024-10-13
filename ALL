@@ -1,3 +1,5 @@
+CloudFlare :
+
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@zula.ir:443?security=tls&sni=pages.dev&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=m1-mahsang.pages.dev&encryption=none#Rayan%20-%20CF%20-M1%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m2-mahsang.pages.dev&encryption=none#Rayan%20-%20CF%20-M2%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.io:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m3-mahsang.pages.dev&encryption=none#Rayan%20-%20CF%20-M3%20-%20443
@@ -18,6 +20,9 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@themeisle.com:443?security=tls&sni=
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@g2.com:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m18-mahsang.pages.dev&encryption=none#Rayan%20-%20CF%20-M18%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@didgahnews.ir:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m19-mahsang.pages.dev&encryption=none#Rayan%20-%20CF%20-M19%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@vinatech.ir:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m20-mahsang.pages.dev&encryption=none#Rayan%20-%20CF%20-M20%20-%20443
+
+GCore :
+
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns1.gcorelabs.net:443?security=tls&sni=ns1.gcorelabs.net&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=1.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G1%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns1.gcdn.services:443?security=tls&sni=ns1.gcdn.services&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=2.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G2%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@gns1.gcdn.co:443?security=tls&sni=gns1.gcdn.co&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=3.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G3%20-%20443
@@ -38,6 +43,9 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns1.gcorelabs.net:443?security=tls&
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns1.gcdn.services:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=18.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G18%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@gns1.gcdn.co:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=19.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G19%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@speedtest-fr5.gcore.com:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=20.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G20%20-%20443
+
+Fastly :
+
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:443?security=tls&sni=seminarsinmcb.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.pezeshkian-5.net&encryption=none#Rayan%20-%20FL%20-%20F5%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:443?security=tls&sni=bwdraper.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.pezeshkian-10.net&encryption=none#Rayan%20-%20FL%20-%20F10%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:443?security=tls&sni=zmaoz.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.pezeshkian-15.net&encryption=none#Rayan%20-%20FL%20-%20F15%20-%20443
