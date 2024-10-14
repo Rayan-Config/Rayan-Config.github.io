@@ -1,2567 +1,282 @@
 {
-  "log": {
-    "disabled": false,
-    "level": "info",
-    "timestamp": true
-  },
   "dns": {
-    "servers": [
-      {
-        "tag": "proxyDns",
-        "address": "8.8.8.8",
-        "detour": "select"
-      },
-      {
-        "tag": "localDns",
-        "address": "https://208.67.222.222/dns-query",
-        "detour": "direct"
-      },
-      {
-        "tag": "block",
-        "address": "rcode://success"
-      }
-    ],
+    "final": "local-dns",
     "rules": [
       {
-        "domain": [
-          "ghproxy.com",
-          "cdn.jsdelivr.net",
-          "testingcf.jsdelivr.net"
+        "clash_mode": "Global",
+        "server": "proxy-dns",
+        "source_ip_cidr": [
+          "172.19.0.0/30"
+        ]
+      },
+      {
+        "server": "proxy-dns",
+        "source_ip_cidr": [
+          "172.19.0.0/30"
+        ]
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "direct-dns"
+      },
+      {
+        "rule_set": [
+          "geosite-ir"
         ],
-        "server": "localDns"
-      },
-      {
-        "geosite": [
-          "category-ads-all"
-        ],
-        "server": "block"
-      },
-      {
-        "server": "localDns",
-        "outbound": "any",
-        "disable_cache": true
-      },
-      {
-        "geosite": [
-          "cn"
-        ],
-        "server": "localDns"
-      },
-      {
-        "server": "localDns",
-        "clash_mode": "direct"
-      },
-      {
-        "server": "proxyDns",
-        "clash_mode": "global"
-      },
-      {
-        "geosite": [
-          "geolocation-!cn"
-        ],
-        "server": "proxyDns"
+        "server": "direct-dns"
       }
     ],
-    "strategy": "ipv4_only"
+    "servers": [
+      {
+        "address": "https://wbhx6oenr0.cloudflare-gateway.com/dns-query",
+        "address_resolver": "local-dns",
+        "detour": "proxy",
+        "tag": "proxy-dns"
+      },
+      {
+        "address": "local",
+        "detour": "direct",
+        "tag": "local-dns"
+      },
+      {
+        "address": "rcode://success",
+        "tag": "block"
+      },
+      {
+        "address": "local",
+        "detour": "direct",
+        "tag": "direct-dns"
+      }
+    ],
+    "strategy": "prefer_ipv4"
   },
   "inbounds": [
     {
-      "sniff": true,
-      "type": "mixed",
-      "listen": "127.0.0.1",
-      "listen_port": 1081
-    },
-    {
-      "stack": "system",
       "auto_route": true,
+      "endpoint_independent_nat": false,
       "inet4_address": "172.19.0.1/30",
       "mtu": 9000,
-      "sniff": true,
-      "strict_route": true,
-      "type": "tun",
       "platform": {
         "http_proxy": {
           "enabled": true,
           "server": "127.0.0.1",
-          "server_port": 1081
+          "server_port": 2080
         }
-      }
+      },
+      "sniff": true,
+      "stack": "system",
+      "strict_route": false,
+      "type": "tun"
+    },
+    {
+      "listen": "127.0.0.1",
+      "listen_port": 2080,
+      "sniff": true,
+      "type": "mixed",
+      "users": []
     }
   ],
   "outbounds": [
     {
-      "tag": "select",
-      "type": "selector",
       "outbounds": [
         "auto",
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
+        "direct",
+        "Rayan - FL - F5 - 443",
+        "Rayan - FL - F5 - 443",
+        "Rayan - FL - F5 - 443",
         "Rayan - GC - G1 - 443",
         "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "auto",
-      "type": "urltest",
-      "outbounds": [
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
+        "Rayan - GC - G3 - 443"
       ],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "1m",
-      "tolerance": 50
+      "tag": "proxy",
+      "type": "selector"
     },
     {
-      "tag": "🤖 OpenAI",
-      "type": "selector",
+      "interval": "10m",
       "outbounds": [
-        "direct",
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
         "Rayan - FL - F5 - 443",
         "Rayan - FL - F10 - 443",
         "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "🌌 Google",
-      "type": "selector",
-      "outbounds": [
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
         "Rayan - GC - G1 - 443",
         "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "📟 Telegram",
-      "type": "selector",
-      "outbounds": [
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "🐦 Twitter",
-      "type": "selector",
-      "outbounds": [
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "👤 Facebook",
-      "type": "selector",
-      "outbounds": [
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "🛍️ Amazon",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "🍎 Apple",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "🧩 Microsoft",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "🎮 Game",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "📺 Bilibili",
-      "type": "selector",
-      "outbounds": [
-        "direct"
-      ]
-    },
-    {
-      "tag": "🎬 MediaVideo",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "🌏 !cn",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "Rayan - CF -M1 - 443",
-        "Rayan - CF -M2 - 443",
-        "Rayan - CF -M3 - 443",
-        "Rayan - CF -M4 - 443",
-        "Rayan - CF -M5 - 443",
-        "Rayan - CF -M6 - 443",
-        "Rayan - CF -M7 - 443",
-        "Rayan - CF -M8 - 443",
-        "Rayan - CF -M9 - 443",
-        "Rayan - CF -M10 - 443",
-        "Rayan - CF -M11 - 443",
-        "Rayan - CF -M12 - 443",
-        "Rayan - CF -M13 - 443",
-        "Rayan - CF -M14 - 443",
-        "Rayan - CF -M15 - 443",
-        "Rayan - CF -M16 - 443",
-        "Rayan - CF -M17 - 443",
-        "Rayan - CF -M18 - 443",
-        "Rayan - CF -M19 - 443",
-        "Rayan - CF -M20 - 443",
-        "Rayan - GC - G1 - 443",
-        "Rayan - GC - G2 - 443",
-        "Rayan - GC - G3 - 443",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G5 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G7 - 443",
-        "Rayan - GC - G8 - 443",
-        "Rayan - GC - G9 - 443",
-        "Rayan - GC - G10 - 443",
-        "Rayan - GC - G11 - 443",
-        "Rayan - GC - G12 - 443",
-        "Rayan - GC - G13 - 443",
-        "Rayan - GC - G14 - 443",
-        "Rayan - GC - G15 - 443",
-        "Rayan - GC - G16 - 443",
-        "Rayan - GC - G17 - 443",
-        "Rayan - GC - G18 - 443",
-        "Rayan - GC - G19 - 443",
-        "Rayan - GC - G20 - 443",
-        "Rayan - GC - G21 - 443",
-        "Rayan - GC - G22 - 443",
-        "Rayan - GC - G23 - 443",
-        "Rayan - GC - G24 - 443",
-        "Rayan - GC - G25 - 443",
-        "Rayan - GC - G26 - 443",
-        "Rayan - GC - G27 - 443",
-        "Rayan - GC - G28 - 443",
-        "Rayan - GC - G29 - 443",
-        "Rayan - GC - G30 - 443",
-        "Rayan - FL - F5 - 443",
-        "Rayan - FL - F10 - 443",
-        "Rayan - FL - F15 - 443",
-        "Rayan - FL - F20 - 443",
-        "Rayan - FL - F25 - 443",
-        "Rayan - FL - F30 - 443",
-        "Rayan - FL - F35 - 443",
-        "Rayan - FL - F40 - 443",
-        "Rayan - FL - F45 - 443",
-        "Rayan - FL - F50 - 443",
-        "Rayan - FL - F55 - 443",
-        "Rayan - FL - F60 - 443",
-        "Rayan - FL - F65 - 443",
-        "Rayan - FL - F70 - 443",
-        "Rayan - FL - F75 - 443",
-        "Rayan - FL - F80 - 443",
-        "Rayan - FL - F85 - 443",
-        "Rayan - FL - F90 - 443",
-        "Rayan - FL - F95 - 443",
-        "Rayan - FL - F100 - 443"
-      ]
-    },
-    {
-      "tag": "🌏 cn",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "select"
-      ]
-    },
-    {
-      "tag": "🛑 AdBlock",
-      "type": "selector",
-      "outbounds": [
-        "block",
-        "direct"
-      ]
+        "Rayan - GC - G3 - 443"
+      ],
+      "tag": "auto",
+      "tolerance": 50,
+      "type": "urltest",
+      "url": "http://www.gstatic.com/generate_204"
     },
     {
       "tag": "direct",
       "type": "direct"
     },
     {
-      "tag": "block",
-      "type": "block"
-    },
-    {
       "tag": "dns-out",
       "type": "dns"
     },
     {
-      "server": "m1-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M1 - 443",
-      "type": "vless"
+      "tag": "block",
+      "type": "block"
     },
     {
-      "server": "m2-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M2 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m3-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M3 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m4-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M4 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m5-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M5 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m6-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M6 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m7-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M7 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m8-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M8 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m9-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M9 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m10-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M10 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m11-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M11 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m12-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M12 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m13-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M13 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m14-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M14 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m15-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M15 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m16-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M16 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m17-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M17 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m18-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M18 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m19-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M19 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "m20-mahsang.pages.dev",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "pages.dev"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - CF -M20 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "1.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G1 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "2.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G2 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "3.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G3 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "4.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G4 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "5.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G5 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "6.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G6 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "7.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G7 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "8.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G8 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "9.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G9 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "10.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G10 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "11.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G11 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "12.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G12 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "13.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G13 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "14.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G14 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "15.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G15 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "16.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G16 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "17.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G17 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "18.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G18 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "19.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G19 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "20.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G20 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "21.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G21 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "22.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G22 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "23.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G23 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "24.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G24 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "25.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G25 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "26.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G26 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "27.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G27 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "28.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G28 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "29.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G29 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "30.gcr.dns04.com",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "gcore.com"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - GC - G30 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-5.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "bwdraper.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "type": "vless",
       "tag": "Rayan - FL - F5 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-10.net",
+      "server": "seminarsinmcb.faculty.ucdavis.edu",
       "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
-        "enabled": true,
-        "server_name": "zmaoz.faculty.ucdavis.edu"
+        "enabled": true
       },
       "transport": {
-        "path": "/?ed=2560",
         "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "dr.pezeshkian-5.net"
+        }}},
+    {
+      "type": "vless",
       "tag": "Rayan - FL - F10 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-15.net",
+      "server": "bwdraper.faculty.ucdavis.edu",
       "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
-        "enabled": true,
-        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
+        "enabled": true
       },
       "transport": {
-        "path": "/?ed=2560",
         "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "dr.pezeshkian-10.net"
+        }}},
+    {
+      "type": "vless",
       "tag": "Rayan - FL - F15 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-20.net",
+      "server": "zmaoz.faculty.ucdavis.edu",
       "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
-        "enabled": true,
-        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
+        "enabled": true
       },
       "transport": {
-        "path": "/?ed=2560",
         "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F20 - 443",
-      "type": "vless"
-    },
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "dr.pezeshkian-5.net"
+        }}},
     {
-      "server": "dr.pezeshkian-25.net",
+      "type": "vless",
+      "tag": "Rayan - GC - G1 - 443",
+      "server": "ns1.gcorelabs.net",
       "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
-        "enabled": true,
-        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
+        "enabled": true
       },
       "transport": {
-        "path": "/?ed=2560",
         "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F25 - 443",
-      "type": "vless"
-    },
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "1.gcr.dns04.com"
+        }}},
     {
-      "server": "dr.pezeshkian-30.net",
+      "type": "vless",
+      "tag": "Rayan - GC - G2 - 443",
+      "server": "ns1.gcdn.services",
       "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
-        "enabled": true,
-        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
+        "enabled": true
       },
       "transport": {
-        "path": "/?ed=2560",
         "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F30 - 443",
-      "type": "vless"
-    },
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "2.gcr.dns04.com"
+        }}},
     {
-      "server": "dr.pezeshkian-35.net",
+      "type": "vless",
+      "tag": "Rayan - GC - G3 - 443",
+      "server": "gns1.gcdn.co",
       "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
-        "enabled": true,
-        "server_name": "bwdraper.faculty.ucdavis.edu"
+        "enabled": true
       },
       "transport": {
-        "path": "/?ed=2560",
         "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F35 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-40.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "zmaoz.faculty.ucdavis.edu"
-      },
-      "transport": {
         "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F40 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-45.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F45 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-50.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "bwdraper.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F50 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-55.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "zmaoz.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F55 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-60.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "zmaoz.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F60 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-65.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "bwdraper.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F65 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-70.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "zmaoz.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F70 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-75.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F75 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-80.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "bwdraper.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F80 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-85.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "zmaoz.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F85 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-90.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F90 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-95.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "bwdraper.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F95 - 443",
-      "type": "vless"
-    },
-    {
-      "server": "dr.pezeshkian-100.net",
-      "server_port": 443,
-      "tls": {
-        "enabled": true,
-        "server_name": "seminarsinmcb.faculty.ucdavis.edu"
-      },
-      "transport": {
-        "path": "/?ed=2560",
-        "type": "ws",
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tag": "Rayan - FL - F100 - 443",
-      "type": "vless"
-    }
+        "headers": {
+          "host": "3.gcr.dns04.com"
+    }}}
   ],
   "route": {
-    "geoip": {
-      "download_url": "https://github.com/soffchen/sing-geoip/releases/latest/download/geoip.db",
-      "download_detour": "select"
-    },
-    "geosite": {
-      "download_url": "https://github.com/soffchen/sing-geosite/releases/latest/download/geosite.db",
-      "download_detour": "select"
-    },
-    "rules": [
+    "auto_detect_interface": true,
+    "final": "proxy",
+    "rule_set": [
       {
-        "protocol": "dns",
-        "outbound": "dns-out"
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-ads",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs"
       },
       {
-        "network": "udp",
-        "port": 443,
-        "outbound": "block"
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-private",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs"
       },
       {
-        "clash_mode": "direct",
-        "outbound": "direct"
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-ir",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ir.srs"
       },
       {
-        "clash_mode": "global",
-        "outbound": "select"
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geoip-private",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
       },
       {
-        "domain": [
-          "v2rayse.com",
-          "cfmem.com",
-          "vpnse.org",
-          "cff.pw",
-          "tt.vg"
-        ],
-        "outbound": "select"
-      },
-      {
-        "domain": [
-          "clash.razord.top",
-          "yacd.metacubex.one",
-          "yacd.haishan.me",
-          "d.metacubex.one"
-        ],
-        "outbound": "direct"
-      },
-      {
-        "geosite": [
-          "openai"
-        ],
-        "outbound": "🤖 OpenAI"
-      },
-      {
-        "geosite": [
-          "google",
-          "github"
-        ],
-        "geoip": [
-          "google"
-        ],
-        "outbound": "🌌 Google"
-      },
-      {
-        "geosite": [
-          "telegram"
-        ],
-        "geoip": [
-          "telegram"
-        ],
-        "outbound": "📟 Telegram"
-      },
-      {
-        "geosite": [
-          "twitter"
-        ],
-        "geoip": [
-          "twitter"
-        ],
-        "outbound": "🐦 Twitter"
-      },
-      {
-        "geosite": [
-          "facebook",
-          "instagram"
-        ],
-        "geoip": [
-          "facebook"
-        ],
-        "outbound": "👤 Facebook"
-      },
-      {
-        "geosite": [
-          "amazon"
-        ],
-        "outbound": "🛍️ Amazon"
-      },
-      {
-        "geosite": [
-          "apple-cn",
-          "apple"
-        ],
-        "outbound": "🍎 Apple"
-      },
-      {
-        "geosite": [
-          "microsoft"
-        ],
-        "outbound": "🧩 Microsoft"
-      },
-      {
-        "geosite": [
-          "category-games"
-        ],
-        "outbound": "🎮 Game"
-      },
-      {
-        "geosite": [
-          "bilibili"
-        ],
-        "outbound": "📺 Bilibili"
-      },
-      {
-        "geosite": [
-          "tiktok",
-          "netflix",
-          "hbo",
-          "disney",
-          "primevideo"
-        ],
-        "geoip": [
-          "netflix"
-        ],
-        "outbound": "🎬 MediaVideo"
-      },
-      {
-        "geosite": [
-          "geolocation-!cn"
-        ],
-        "outbound": "🌏 !cn"
-      },
-      {
-        "geosite": [
-          "cn"
-        ],
-        "geoip": [
-          "private",
-          "cn"
-        ],
-        "outbound": "🌏 cn"
-      },
-      {
-        "geosite": [
-          "category-ads-all"
-        ],
-        "outbound": "🛑 AdBlock"
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geoip-ir",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/ir.srs"
       }
     ],
-    "auto_detect_interface": true,
-    "final": "select"
-  },
-  "experimental": {
-    "cache_file": {
-      "enabled": true,
-      "path": "cache.db"
-    }
+    "rules": [
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "proxy"
+      },
+      {
+        "outbound": "dns-out",
+        "protocol": "dns"
+      },
+      {
+        "outbound": "direct",
+        "rule_set": [
+          "geosite-ir",
+          "geoip-ir"
+        ]
+      },
+      {
+        "outbound": "block",
+        "rule_set": [
+          "geosite-ads",
+          "geosite-private",
+          "geoip-private"
+        ]
+      }
+    ]
   }
 }
