@@ -229,7 +229,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G56 - 443",
-      "server": "ns3.gcorelabs.net",
+      "server": "speedtest-fr5.gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -244,7 +244,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G156 - 443",
-      "server": "ns3.gcdn.services",
+      "server": "speedtest-pa5.gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -274,7 +274,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G356 - 443",
-      "server": "ns4.gcorelabs.net",
+      "server": "fr5-speedtest.tools.gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -334,7 +334,7 @@
     {
       "type": "vless",
       "tag": "Rayan - CF - C267 - 443",
-      "server": "m2677-mahsang.pages.dev",
+      "server": "m267-mahsang.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -344,7 +344,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m2677-mahsang.pages.dev"
+          "host": "m267-mahsang.pages.dev"
     }}},
     {
       "type": "vless",
@@ -360,7 +360,7 @@
         "path": "/?ed=2560",
         "headers": {
           "host": "m367-mahsang.pages.dev"
-    }}}
+    }}},\
   ],
   "route": {
     "auto_detect_interface": true,
