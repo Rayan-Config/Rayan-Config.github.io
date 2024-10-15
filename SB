@@ -360,7 +360,7 @@
         "path": "/?ed=2560",
         "headers": {
           "host": "m367-mahsang.pages.dev"
-    }}},\
+    }}}
   ],
   "route": {
     "auto_detect_interface": true,
