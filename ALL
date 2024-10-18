@@ -85,6 +85,7 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns3.gcdn.services:443?security=tls&
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@gns3.gcdn.co:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=60.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G60%20-%20443
 
 
+
 Fastly :
 
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:443?security=tls&sni=seminarsinmcb.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.pezeshkian-5.net&encryption=none#Rayan%20-%20FL%20-%20F5%20-%20443
@@ -147,3 +148,4 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:443?secur
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:443?security=tls&sni=pscresearch.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.pezeshkian-290.net&encryption=none#Rayan%20-%20FL%20-%20F290%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:443?security=tls&sni=seminarsinmcb.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.pezeshkian-295.net&encryption=none#Rayan%20-%20FL%20-%20F295%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:443?security=tls&sni=bwdraper.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.pezeshkian-300.net&encryption=none#Rayan%20-%20FL%20-%20F300%20-%20443
+
