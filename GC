@@ -48,3 +48,13 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@gns3.gcdn.co:443?security=tls&sni=g
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns4.gcorelabs.net:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=48.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G48%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns4.gcdn.services:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=49.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G49%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@gns4.gcdn.co:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=50.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G50%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns1.gcorelabs.net:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=51.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G51%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns1.gcdn.services:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=52.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G52%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@gns1.gcdn.co:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=53.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G53%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns2.gcorelabs.net:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=54.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G54%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns2.gcdn.services:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=55.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G55%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@gns2.gcdn.co:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=56.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G56%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns3.gcorelabs.net:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=57.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G57%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns3.gcdn.services:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=58.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G58%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@ns3.gcdn.services:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=59.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G59%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@gns3.gcdn.co:443?security=tls&sni=gcore.com&allowInsecure=1&type=ws&path=/?ed%3D2560&host=60.gcr.dns04.com&encryption=none#Rayan%20-%20GC%20-%20G60%20-%20443
