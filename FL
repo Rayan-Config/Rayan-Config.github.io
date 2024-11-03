@@ -58,3 +58,43 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:443?secur
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:443?security=tls&sni=pscresearch.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.zarif-290.com&encryption=none#Rayan%20-%20FL%20-%20F290%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:443?security=tls&sni=seminarsinmcb.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.zarif-295.com&encryption=none#Rayan%20-%20FL%20-%20F295%20-%20443
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:443?security=tls&sni=bwdraper.faculty.ucdavis.edu&allowInsecure=1&type=ws&path=/?ed%3D2560&host=dr.zarif-300.com&encryption=none#Rayan%20-%20FL%20-%20F300%20-%20443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-305.com&type=ws#Rayan - FL - F305 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-310.com&type=ws#Rayan - FL - F310 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-315.com&type=ws#Rayan - FL - F315 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-320.com&type=ws#Rayan - FL - F320 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-325.com&type=ws#Rayan - FL - F325 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-330.com&type=ws#Rayan - FL - F330 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-335.com&type=ws#Rayan - FL - F335 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-340.com&type=ws#Rayan - FL - F340 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-345.com&type=ws#Rayan - FL - F345 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-350.com&type=ws#Rayan - FL - F350 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-355.com&type=ws#Rayan - FL - F355 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-360.com&type=ws#Rayan - FL - F360 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-365.com&type=ws#Rayan - FL - F365 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-370.com&type=ws#Rayan - FL - F370 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-375.com&type=ws#Rayan - FL - F375 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-380.com&type=ws#Rayan - FL - F380 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-385.com&type=ws#Rayan - FL - F385 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-390.com&type=ws#Rayan - FL - F390 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-395.com&type=ws#Rayan - FL - F395 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-400.com&type=ws#Rayan - FL - F400 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-405.com&type=ws#Rayan - FL - F405 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-410.com&type=ws#Rayan - FL - F410 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-415.com&type=ws#Rayan - FL - F415 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-420.com&type=ws#Rayan - FL - F420 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-425.com&type=ws#Rayan - FL - F425 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-430.com&type=ws#Rayan - FL - F430 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-435.com&type=ws#Rayan - FL - F435 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-440.com&type=ws#Rayan - FL - F440 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-445.com&type=ws#Rayan - FL - F445 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-450.com&type=ws#Rayan - FL - F450 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-455.com&type=ws#Rayan - FL - F455 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-460.com&type=ws#Rayan - FL - F460 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-465.com&type=ws#Rayan - FL - F465 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-470.com&type=ws#Rayan - FL - F470 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-475.com&type=ws#Rayan - FL - F475 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-480.com&type=ws#Rayan - FL - F480 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@seminarsinmcb.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-485.com&type=ws#Rayan - FL - F485 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@bwdraper.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-490.com&type=ws#Rayan - FL - F490 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zmaoz.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-495.com&type=ws#Rayan - FL - F495 - 80
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@pscresearch.faculty.ucdavis.edu:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=dr.zarif-500.com&type=ws#Rayan - FL - F500 - 80
