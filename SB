@@ -58,7 +58,7 @@
         }
       },
       "sniff": true,
-      "inet4_address": "172.19.0.1/30"
+      "address": "172.19.0.1/30"
     },
     {
       "type": "mixed",
@@ -130,7 +130,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G4 - 443",
-      "server": "ns1.gcorelabs.net",
+      "server": "gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -147,7 +147,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G54 - 443",
-      "server": "ns1.gcdn.services",
+      "server": "gcore.lu",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -164,7 +164,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G154 - 443",
-      "server": "gns1.gcdn.co",
+      "server": "gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -181,7 +181,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G254 - 443",
-      "server": "ns2.gcorelabs.net",
+      "server": "gcore.lu",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -198,7 +198,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G354 - 443",
-      "server": "ns2.gcdn.services",
+      "server": "gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -215,7 +215,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G6 - 443",
-      "server": "gns2.gcdn.co",
+      "server": "gcore.lu",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -232,7 +232,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G56 - 443",
-      "server": "speedtest-fr5.gcore.com",
+      "server": "gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -249,7 +249,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G156 - 443",
-      "server": "speedtest-pa5.gcore.com",
+      "server": "gcore.lu",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -266,7 +266,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G256 - 443",
-      "server": "gns3.gcdn.co",
+      "server": "gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -283,7 +283,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G356 - 443",
-      "server": "fr5-speedtest.tools.gcore.com",
+      "server": "gcore.lu",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
