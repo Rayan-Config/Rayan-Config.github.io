@@ -111,8 +111,8 @@
         "Rayan - CF - C267 - 443",
         "Rayan - CF - C367 - 443"
       ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m0s",
+      "url": "https://api.telegram.org/robots.txt",
+      "interval": "1m0s",
       "tolerance": 50
     },
     {
