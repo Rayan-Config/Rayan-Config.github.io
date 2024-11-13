@@ -24,7 +24,7 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@homestead.com:443?security=tls&sni=
 
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@digg.com:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m240-mahsang.pages.dev&encryption=none#Rayan - CF - C240 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@fonts.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m260-mahsang.pages.dev&encryption=none#Rayan - CF - C260 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@fonts.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m2600-mahsang.pages.dev&encryption=none#Rayan - CF - C260 - 443
 
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@cdnjs.com:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m280-mahsang.pages.dev&encryption=none#Rayan - CF - C280 - 443
 
