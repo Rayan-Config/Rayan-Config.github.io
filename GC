@@ -28,7 +28,7 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@92.223.124.62:443?security=tls&sni=
 
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@94.176.183.62:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=15.gcr.dns04.com&encryption=none#Rayan - GC - G15 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=16.gcr.dns04.com&encryption=none#Rayan - GC - G16 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=16-16.gcr.dns04.com&encryption=none#Rayan - GC - G16 - 443
 
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@92.223.96.79:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=17.gcr.dns04.com&encryption=none#Rayan - GC - G17 - 443
 
