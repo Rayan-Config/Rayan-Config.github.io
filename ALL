@@ -1,8 +1,8 @@
 CloudFlare :
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@zula.ir:443?security=tls&sni=pages.dev&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=m20-mahsang.pages.dev&encryption=none#Rayan - CF - C20 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zula.ir:443?security=tls&sni=pages.dev&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=m-20-mahoor.pages.dev&encryption=none#Rayan - CF - C20 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m40-mahsang.pages.dev&encryption=none#Rayan - CF - C40 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m-40-mahoor.pages.dev&encryption=none#Rayan - CF - C40 - 443
 
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.io:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m60-mahsang.pages.dev&encryption=none#Rayan - CF - C60 - 443
 
