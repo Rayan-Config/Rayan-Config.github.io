@@ -147,7 +147,7 @@
     {
       "type": "vless",
       "tag": "Rayan - GC - G54 - 443",
-      "server": "gcore.lu",
+      "server": "gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -157,7 +157,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "54.gcr.dns04.com"
+          "host": "1.gcr.dns04.com"
         }
       }
     },
@@ -174,14 +174,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "154.gcr.dns04.com"
+          "host": "2.gcr.dns04.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - GC - G254 - 443",
-      "server": "gcore.lu",
+      "server": "gcore.com",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -191,7 +191,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "254.gcr.dns04.com"
+          "host": "3.gcr.dns04.com"
         }
       }
     },
@@ -208,7 +208,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "354.gcr.dns04.com"
+          "host": "5.gcr.dns04.com"
         }
       }
     },
@@ -242,7 +242,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "56.gcr.dns04.com"
+          "host": "7.gcr.dns04.com"
         }
       }
     },
@@ -259,7 +259,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "156.gcr.dns04.com"
+          "host": "8.gcr.dns04.com"
         }
       }
     },
@@ -276,7 +276,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "256.gcr.dns04.com"
+          "host": "9.gcr.dns04.com"
         }
       }
     },
@@ -293,14 +293,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "356.gcr.dns04.com"
+          "host": "10.gcr.dns04.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C17 - 443",
-      "server": "m17-mahsang.pages.dev",
+      "server": "m-10-mahoor.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -310,14 +310,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m17-mahsang.pages.dev"
+          "host": "m-10-mahoor.pages.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C67 - 443",
-      "server": "m67-mahsang.pages.dev",
+      "server": "m-20-mahoor.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -327,14 +327,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m67-mahsang.pages.dev"
+          "host": "m-20-mahoor.pages.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C167 - 443",
-      "server": "m167-mahsang.pages.dev",
+      "server": "m-30-mahoor.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -344,14 +344,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m167-mahsang.pages.dev"
+          "host": "m-30-mahoor.pages.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C267 - 443",
-      "server": "m267-mahsang.pages.dev",
+      "server": "m-40-mahoor.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -361,14 +361,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m267-mahsang.pages.dev"
+          "host": "m-40-mahoor.pages.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C367 - 443",
-      "server": "m367-mahsang.pages.dev",
+      "server": "m-50-mahoor.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -378,7 +378,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m367-mahsang.pages.dev"
+          "host": "m-50-mahoor.pages.dev"
         }
       }
     }
