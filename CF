@@ -2,19 +2,19 @@ vless://f2004126-5865-4980-b6dd-2211dbaadf10@zula.ir:443?security=tls&sni=pages.
 
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m-40-mahoor.pages.dev&encryption=none#Rayan - CF - C40 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.io:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m60-mahsang.pages.dev&encryption=none#Rayan - CF - C60 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.io:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m-10-mahoor.pages.dev&encryption=none#Rayan - CF - C60 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@creativecommons.org:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m80-mahsang.pages.dev&encryption=none#Rayan - CF - C80 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@creativecommons.org:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m-30-mahoor.pages.dev&encryption=none#Rayan - CF - C80 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@nslookup.io:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m100-mahsang.pages.dev&encryption=none#Rayan - CF - C100 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@nslookup.io:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m-50-mahoor.pages.dev&encryption=none#Rayan - CF - C100 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@digitalocean.com:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m120-mahsang.pages.dev&encryption=none#Rayan - CF - C120 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@digitalocean.com:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m-15-mahoor.pages.dev&encryption=none#Rayan - CF - C120 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@sourceforge.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m140-mahsang.pages.dev&encryption=none#Rayan - CF - C140 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@sourceforge.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m-25-mahoor.pages.dev&encryption=none#Rayan - CF - C140 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@vimeo.com:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m160-mahsang.pages.dev&encryption=none#Rayan - CF - C160 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@vimeo.com:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m-35-mahoor.pages.dev&encryption=none#Rayan - CF - C160 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@www.speedtest.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m180-mahsang.pages.dev&encryption=none#Rayan - CF - C180 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@www.speedtest.net:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m-45-mahoor.pages.dev&encryption=none#Rayan - CF - C180 - 443
 
 vless://f2004126-5865-4980-b6dd-2211dbaadf10@jquery.com:443?security=tls&sni=pages.dev&allowInsecure=1&type=ws&path=/?ed%3D2560&host=m200-mahsang.pages.dev&encryption=none#Rayan - CF - C200 - 443
 
