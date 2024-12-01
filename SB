@@ -317,7 +317,7 @@
     {
       "type": "vless",
       "tag": "Rayan - CF - C67 - 443",
-      "server": "m-20-mahoor.pages.dev",
+      "server": "m-5-1-mahoor.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -327,14 +327,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m-20-mahoor.pages.dev"
+          "host": "m-5-1-mahoor.pages.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C167 - 443",
-      "server": "m-30-mahoor.pages.dev",
+      "server": "m-17-1-mahoor.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -344,14 +344,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m-30-mahoor.pages.dev"
+          "host": "m-17-1-mahoor.pages.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C267 - 443",
-      "server": "m-40-mahoor.pages.dev",
+      "server": "m-23-1-mahoor.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -361,14 +361,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m-40-mahoor.pages.dev"
+          "host": "m-23-1-mahoor.pages.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C367 - 443",
-      "server": "m-50-mahoor.pages.dev",
+      "server": "m-7-1-mahoor.pages.dev",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -378,7 +378,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "m-50-mahoor.pages.dev"
+          "host": "m-7-1-mahoor.pages.dev"
         }
       }
     }
