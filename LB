@@ -1,6 +1,6 @@
 [
 {
-  "remarks": "Fastly - Load Balancer",
+  "remarks": "🔴 Fastly - Load Balancer",
   "log": {
     "access": "",
     "error": "",
@@ -931,7 +931,7 @@
   }
 },
 {
-  "remarks": "Gcore - Load Balancer",
+  "remarks": "🏀 Gcore - Load Balancer",
   "log": {
     "access": "",
     "error": "",
@@ -1492,7 +1492,7 @@
   }
 },
 {
-  "remarks": "Cloudflare - Load Balancer",
+  "remarks": "🔵 Cloudflare - Load Balancer",
   "log": {
     "access": "",
     "error": "",
@@ -2053,7 +2053,7 @@
   }
 },
 {
-  "remarks": "All Config - Load Balancer",
+  "remarks": "⚪️ All Config - Load Balancer",
   "log": {
     "access": "",
     "error": "",
