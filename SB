@@ -58,7 +58,7 @@
         }
       },
       "sniff": true,
-      "address": "172.19.0.1/30"
+      "inet4_address": "172.19.0.1/30"
     },
     {
       "type": "mixed",
@@ -74,45 +74,35 @@
       "outbounds": [
         "auto",
         "direct",
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G54 - 443",
-        "Rayan - GC - G154 - 443",
-        "Rayan - GC - G254 - 443",
-        "Rayan - GC - G354 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G56 - 443",
-        "Rayan - GC - G156 - 443",
-        "Rayan - GC - G256 - 443",
-        "Rayan - GC - G356 - 443",
-        "Rayan - CF - C17 - 443",
-        "Rayan - CF - C67 - 443",
-        "Rayan - CF - C167 - 443",
-        "Rayan - CF - C267 - 443",
-        "Rayan - CF - C367 - 443"
+        "Rayan - CF - C1 - 443",
+        "Rayan - CF - C2 - 443",
+        "Rayan - CF - C3 - 443",
+        "Rayan - CF - C4 - 443",
+        "Rayan - CF - C5 - 443",
+        "Rayan - CF - C6 - 443",
+        "Rayan - CF - C7 - 443",
+        "Rayan - CF - C8 - 443",
+        "Rayan - CF - C9 - 443",
+        "Rayan - CF - C10 - 443"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "Rayan - GC - G4 - 443",
-        "Rayan - GC - G54 - 443",
-        "Rayan - GC - G154 - 443",
-        "Rayan - GC - G254 - 443",
-        "Rayan - GC - G354 - 443",
-        "Rayan - GC - G6 - 443",
-        "Rayan - GC - G56 - 443",
-        "Rayan - GC - G156 - 443",
-        "Rayan - GC - G256 - 443",
-        "Rayan - GC - G356 - 443",
-        "Rayan - CF - C17 - 443",
-        "Rayan - CF - C67 - 443",
-        "Rayan - CF - C167 - 443",
-        "Rayan - CF - C267 - 443",
-        "Rayan - CF - C367 - 443"
+        "Rayan - CF - C1 - 443",
+        "Rayan - CF - C2 - 443",
+        "Rayan - CF - C3 - 443",
+        "Rayan - CF - C4 - 443",
+        "Rayan - CF - C5 - 443",
+        "Rayan - CF - C6 - 443",
+        "Rayan - CF - C7 - 443",
+        "Rayan - CF - C8 - 443",
+        "Rayan - CF - C9 - 443",
+        "Rayan - CF - C10 - 443"
       ],
-      "url": "https://api.telegram.org/robots.txt",
-      "interval": "1m0s",
+      "url": "http://cp.cloudflare.com/",
+      "interval": "3m0s",
       "tolerance": 50
     },
     {
@@ -129,177 +119,7 @@
     },
     {
       "type": "vless",
-      "tag": "Rayan - GC - G4 - 443",
-      "server": "gcore.com",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "4.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - GC - G54 - 443",
-      "server": "gcore.com",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "1.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - GC - G154 - 443",
-      "server": "gcore.com",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "2.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - GC - G254 - 443",
-      "server": "gcore.com",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "3.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - GC - G354 - 443",
-      "server": "gcore.com",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "5.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - GC - G6 - 443",
-      "server": "gcore.lu",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "6.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - GC - G56 - 443",
-      "server": "gcore.com",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "7.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - GC - G156 - 443",
-      "server": "gcore.lu",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "8.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - GC - G256 - 443",
-      "server": "gcore.com",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "9.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - GC - G356 - 443",
-      "server": "gcore.lu",
-      "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "10.gcr.dns04.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C17 - 443",
+      "tag": "Rayan - CF - C1 - 443",
       "server": "rayan.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
@@ -316,7 +136,7 @@
     },
     {
       "type": "vless",
-      "tag": "Rayan - CF - C67 - 443",
+      "tag": "Rayan - CF - C2 - 443",
       "server": "rayan.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
@@ -333,7 +153,7 @@
     },
     {
       "type": "vless",
-      "tag": "Rayan - CF - C167 - 443",
+      "tag": "Rayan - CF - C3 - 443",
       "server": "rayan.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
@@ -350,7 +170,7 @@
     },
     {
       "type": "vless",
-      "tag": "Rayan - CF - C267 - 443",
+      "tag": "Rayan - CF - C4 - 443",
       "server": "rayan.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
@@ -367,7 +187,92 @@
     },
     {
       "type": "vless",
-      "tag": "Rayan - CF - C367 - 443",
+      "tag": "Rayan - CF - C5 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C6 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C7 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C8 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C9 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C10 - 443",
       "server": "rayan.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
