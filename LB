@@ -1786,13 +1786,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1828,13 +1828,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1870,13 +1870,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1912,13 +1912,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1954,13 +1954,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2347,13 +2347,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2389,13 +2389,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2431,13 +2431,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2473,13 +2473,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2515,13 +2515,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "rayan.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "rayan.parmis.us.kg",
           "alpn": [],
           "show": false
         }
