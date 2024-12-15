@@ -1,24 +1,25 @@
 CloudFlare :
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@zula.ir:443?security=tls&sni=rayan.sahel.us.kg&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=rayan.sahel.us.kg&encryption=none#Rayan - CF - C1 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@zula.ir:443?security=tls&sni=colombia.sahel.us.kg&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=colombia.sahel.us.kg&encryption=none#Rayan - CF - C1 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.net:443?security=tls&sni=rayan.sahel.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=rayan.sahel.us.kg&encryption=none#Rayan - CF - C2 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.net:443?security=tls&sni=colombia.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=colombia.parmis.us.kg&encryption=none#Rayan - CF - C2 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.io:443?security=tls&sni=rayan.sahel.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=rayan.sahel.us.kg&encryption=none#Rayan - CF - C3 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@iplocation.io:443?security=tls&sni=ecuador.sahel.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=ecuador.sahel.us.kg&encryption=none#Rayan - CF - C3 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@creativecommons.org:443?security=tls&sni=rayan.sahel.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=rayan.sahel.us.kg&encryption=none#Rayan - CF - C4 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@creativecommons.org:443?security=tls&sni=ecuador.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=ecuador.parmis.us.kg&encryption=none#Rayan - CF - C4 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@nslookup.io:443?security=tls&sni=rayan.sahel.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=rayan.sahel.us.kg&encryption=none#Rayan - CF - C5 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@nslookup.io:443?security=tls&sni=peru.sahel.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=peru.sahel.us.kg&encryption=none#Rayan - CF - C5 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@digitalocean.com:443?security=tls&sni=rayan.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=rayan.parmis.us.kg&encryption=none#Rayan - CF - C6 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@digitalocean.com:443?security=tls&sni=peru.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=peru.parmis.us.kg&encryption=none#Rayan - CF - C6 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@sourceforge.net:443?security=tls&sni=rayan.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=rayan.parmis.us.kg&encryption=none#Rayan - CF - C7 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@sourceforge.net:443?security=tls&sni=chile.sahel.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=chile.sahel.us.kg&encryption=none#Rayan - CF - C7 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@vimeo.com:443?security=tls&sni=rayan.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=rayan.parmis.us.kg&encryption=none#Rayan - CF - C8 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@vimeo.com:443?security=tls&sni=chile.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=chile.parmis.us.kg&encryption=none#Rayan - CF - C8 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@www.speedtest.net:443?security=tls&sni=rayan.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=rayan.parmis.us.kg&encryption=none#Rayan - CF - C9 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@www.speedtest.net:443?security=tls&sni=peru.sahel.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=peru.sahel.us.kg&encryption=none#Rayan - CF - C9 - 443
 
-vless://f2004126-5865-4980-b6dd-2211dbaadf10@jquery.com:443?security=tls&sni=rayan.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=rayan.parmis.us.kg&encryption=none#Rayan - CF - C10 - 443
+vless://f2004126-5865-4980-b6dd-2211dbaadf10@jquery.com:443?security=tls&sni=chile.parmis.us.kg&allowInsecure=1&type=ws&path=/?ed%3D2560&host=chile.parmis.us.kg&encryption=none#Rayan - CF - C10 - 443
+
 
 
 
