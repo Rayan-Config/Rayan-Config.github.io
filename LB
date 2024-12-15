@@ -1576,13 +1576,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1618,13 +1618,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1660,13 +1660,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1702,13 +1702,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1744,13 +1744,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1786,13 +1786,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1828,13 +1828,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1870,13 +1870,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1912,13 +1912,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -1954,13 +1954,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2137,13 +2137,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2179,13 +2179,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2221,13 +2221,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2263,13 +2263,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2305,13 +2305,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.sahel.us.kg"
+            "Host": "bolivia.sahel.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.sahel.us.kg",
+          "serverName": "bolivia.sahel.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2347,13 +2347,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2389,13 +2389,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2431,13 +2431,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2473,13 +2473,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
@@ -2515,13 +2515,13 @@
         "wsSettings": {
           "path": "/?ed%3D2560",
           "headers": {
-            "Host": "rayan.parmis.us.kg"
+            "Host": "bolivia.parmis.us.kg"
           }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "rayan.parmis.us.kg",
+          "serverName": "bolivia.parmis.us.kg",
           "alpn": [],
           "show": false
         }
