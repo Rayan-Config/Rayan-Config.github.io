@@ -120,7 +120,7 @@
     {
       "type": "vless",
       "tag": "Rayan - CF - C1 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -130,14 +130,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C2 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -147,14 +147,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C3 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -164,14 +164,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C4 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -181,14 +181,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C5 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -198,14 +198,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C6 - 443",
-      "server": "rayan.parmis.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -215,14 +215,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.parmis.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C7 - 443",
-      "server": "rayan.parmis.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -232,14 +232,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.parmis.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C8 - 443",
-      "server": "rayan.parmis.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -249,14 +249,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.parmis.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C9 - 443",
-      "server": "rayan.parmis.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -266,14 +266,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.parmis.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C10 - 443",
-      "server": "rayan.parmis.us.kg",
+      "server": "argrentina.sahel.us.kg",
       "server_port": 443,
       "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
       "tls": {
@@ -283,7 +283,7 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.parmis.us.kg"
+          "host": "argrentina.sahel.us.kg"
         }
       }
     }
