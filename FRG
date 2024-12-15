@@ -175,11 +175,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -221,11 +221,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -267,11 +267,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -313,11 +313,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -359,11 +359,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -818,11 +818,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -864,11 +864,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -910,11 +910,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -956,11 +956,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -1002,11 +1002,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -1461,11 +1461,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -1507,11 +1507,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -1553,11 +1553,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -1599,11 +1599,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -1645,11 +1645,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2104,11 +2104,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2150,11 +2150,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2196,11 +2196,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2242,11 +2242,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2288,11 +2288,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2747,11 +2747,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2793,11 +2793,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2839,11 +2839,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2885,11 +2885,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -2931,11 +2931,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
@@ -3389,11 +3389,11 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "mahoor-1.msnegar.eu.org"
+          "serverName": "mahoor.msnegar.eu.org"
         },
         "wsSettings": {
           "headers": {
-            "Host": "mahoor-1.msnegar.eu.org"
+            "Host": "mahoor.msnegar.eu.org"
           },
           "path": "/?ed=2560"
         }
