@@ -89,6 +89,14 @@ vless://81474e9a-9c28-44f1-a32d-bbad5872da4f@81.28.12.12:443?security=tls&sni=gc
 vless://6470135d-ef6c-4417-b99a-248e78e0b544@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/serverssh&host=sg-3d.maxima.us.kg&encryption=none#Rayan%20-%20SVS%20-%20GC%20-%20sg-30-1
 vless://661bd306-b238-4cac-b614-5c6ad2f43a1a@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/serverssh&host=sg-f-1.maxima.us.kg&encryption=none#Rayan%20-%20SVS%20-%20GC%20-%20sg-1-1
 vless://0675f251-c258-4450-8c22-9c1e72857b13@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/serverssh&host=sg2-f-1.maxima.us.kg&encryption=none#Rayan%20-%20SVS%20-%20GC%20-%20sg-2-1
+vless://8b2485ed-fb6c-4110-96cd-acaf49c1e1dc@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=ua-cvs5.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20ua-1-1
+vless://8449dbfa-7e6e-45f1-be1c-7f4bc3047421@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless-ws&host=ca-gdfh5.maxima.us.kg&encryption=none#Rayan%20-%20SSS%20-%20GC%20-%20ca-2-1
+vless://17048918-7cc2-4896-87e8-a1f68e168d56@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=is1-hhhd42.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20is-1-1
+vless://c9d9934d-f887-4e77-9347-dacd6ebb343a@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=nl1-ghdhd.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20nl-1-1
+vless://5466d8cb-8ad1-5fa8-84ea-90971408acd4@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=ua1-hfks.maxima.us.kg&encryption=none#Rayan%20-%20SSM%20-%20GC%20-%20ua-1-1
+vless://fef81223-6073-56fd-9dc9-881c785b122e@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=lv1-jfhk5.maxima.us.kg&encryption=none#Rayan%20-%20SSO%20-%20GC%20-%20lv-1-1
+
+
 
 
 GAFN Fastly:
