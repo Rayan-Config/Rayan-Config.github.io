@@ -37,7 +37,6 @@ vless://a411063c-d659-59c0-ae9e-56055ecef9fa@zmaoz.faculty.ucdavis.edu:443?secur
 
 SSHmax GCORE :
 
-vless://eeeab648-7780-4fb4-a00f-0fc991aa70d6@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=fr13.maxima.us.kg&encryption=none#Rayan%20-%20FVM%20-%20GC%20-%20fr-13
 vless://9b1f565d-50fb-445f-832a-d39475989f72@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=it11.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20it-1-11
 vless://dfb6f849-e7d7-4994-80f7-1bd19b593a2a@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=uk35.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20uk-1-35
 vless://4b9a3393-6e60-4e27-bb11-f48b80f66f03@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=kz25.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20kz-1-25
@@ -54,10 +53,6 @@ vless://c8705ff9-da52-4061-9090-d74842d2199a@81.28.12.12:443?security=tls&sni=gc
 vless://4b9a3393-6e60-4e27-bb11-f48b80f66f03@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=kz-gsfhf5366.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20kz-1-v-1
 vless://9b1f565d-50fb-445f-832a-d39475989f72@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=it-fghgfjg55.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20it-1-v-1
 vless://2766401a-3722-4017-b2e7-f7b45453ca32@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us-jgh5365.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20us-1-c-1
-vless://38b78fca-0387-4e9d-95e5-0ec1d8a0c877@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=ie-gfgh636.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20ie-1-h-1
-vless://eb958381-ac2f-5289-9fa7-4e82f88bee12@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=kz1-hfjhfjf.maxima.us.kg&encryption=none#Rayan%20-%20SSM%20-%20GC%20-%20kz-1-m-1
-vless://a1cea925-a20f-5364-8c7b-86eebfa20aec@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=kz2-ncnjm55.maxima.us.kg&encryption=none#Rayan%20-%20SSM%20-%20GC%20-%20kz-2-m-1
-vless://94fcc081-b99e-5067-a024-ac0059b74113@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us-66vxgbx.maxima.us.kg&encryption=none#Rayan%20-%20SSO%20-%20GC%20-%20us-1-o-1
 vless://9802cad1-ead5-48a8-b408-9793312c14ac@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/serverssh&host=sg-30-fgsfgbfn.maxima.us.kg&encryption=none#Rayan%20-%20SVS%20-%20GC%20-%20sg-r-4
 vless://63c526af-a758-4b60-b8c7-dd2b3f41cf22@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=tr-gfsghjk.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20tr-1-v-2
 vless://9b1f565d-50fb-445f-832a-d39475989f72@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=it-fghj45.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20it-1-v-2
@@ -69,19 +64,12 @@ vless://c59c3de8-2aa8-471a-8984-f9a90eecd6b9@81.28.12.12:443?security=tls&sni=gc
 vless://680f1a7c-e007-4008-8612-ff8c68db5ccd@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=tr-69hjkll.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20tr-1-c-2
 vless://da04fe6f-8459-48ce-8b7b-2757039c0f2f@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=fi-twyerutyrt.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20fi-1-c-2
 vless://7aef0423-b04c-4eb3-91dc-2a3ef975f6f8@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=ie-96ghjkkll.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20ie-1-c-2
-vmess://eyJhZGQiOiI4MS4yOC4xMi4xMiIsImFpZCI6IjAiLCJob3N0IjoidXMtOTIwbm1rbC5tYXhpbWEudXMua2ciLCJpZCI6ImI2MjY3YmYwLWRhNjUtMTFlZi1iNzM4LTIwNWM2ZDVmNWQ3OCIsIm5ldCI6IndzIiwicGF0aCI6Ii91cmtoYTgyMCIsInBvcnQiOiI0NDMiLCJwcyI6IlJheWFuIC0gRlNTIC0gR0MgLSB2YS0xLWMtMSIsInNjeSI6ImF1dG8iLCJzbmkiOiJnY29yZS5jb20iLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=
-vmess://eyJhZGQiOiI4MS4yOC4xMi4xMiIsImFpZCI6IjAiLCJob3N0IjoidXMtNTlnaGpra2trLm1heGltYS51cy5rZyIsImlkIjoiZGI1Mjg4ZDAtZGE2NS0xMWVmLWI4MzctMjA1YzZkNWY1ZDc4IiwibmV0Ijoid3MiLCJwYXRoIjoiLzV0ajdreWhxIiwicG9ydCI6IjQ0MyIsInBzIjoiUmF5YW4gLSBGU1MgLSBHQyAtIGxhLTEtYy0xIiwic2N5IjoiYXV0byIsInNuaSI6Imdjb3JlLmx1IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiI4MS4yOC4xMi4xMiIsImFpZCI6IjAiLCJob3N0IjoiZXUtODk2Z2pqa2xsLm1heGltYS51cy5rZyIsImlkIjoiMGY4NDgzZDAtZGIzZS0xMWVmLWI2MzktMjA1YzZkNWY1ZDc4IiwibmV0Ijoid3MiLCJwYXRoIjoiL3RuZGlzNTQ4IiwicG9ydCI6IjQ0MyIsInBzIjoiUmF5YW4gLSBGU1MgLSBHQyAtIGV1LTEtYy0xIiwic2N5IjoiYXV0byIsInNuaSI6Imdjb3JlLmNvbSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
-vmess://eyJhZGQiOiI4MS4yOC4xMi4xMiIsImFpZCI6IjAiLCJob3N0Ijoic2ctNDVnaG5qanlqdXkubWF4aW1hLnVzLmtnIiwiaWQiOiIyNWE2ZTNmMC1kYTY2LTExZWYtYjIzNi0yMDVjNmQ1ZjVkNzgiLCJuZXQiOiJ3cyIsInBhdGgiOiIvc3ZkMDIxcW0iLCJwb3J0IjoiNDQzIiwicHMiOiJSYXlhbiAtIEZTUyAtIEdDIC0gc2ctMS1jLTEiLCJzY3kiOiJhdXRvIiwic25pIjoiZ2NvcmUuY29tIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
 vless://5c4c17bc-a5ef-4115-b758-7111bbb8a406@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless-ws&host=gb-98ghhjk.maxima.us.kg&encryption=none#Rayan%20-%20SSS%20-%20GC%20-%20gb-1-s-1
 vless://8be61199-3c92-49f8-aec7-fdbf0390c075@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless-ws&host=de-09gfmkj.maxima.us.kg&encryption=none#Rayan%20-%20SSS%20-%20GC%20-%20de-1-s-1
 vless://70ec0751-5b56-4a97-8a4d-52e864ce864b@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless-ws&host=ca-045yhyik.maxima.us.kg&encryption=none#Rayan%20-%20SSS%20-%20GC%20-%20ca-1-s-1
-vless://d13e77fc-9154-461d-bf2a-b777c67d8cd2@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=nl-fsgg5455.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20nl-1-h-2
 vless://b9f46e08-90a1-403e-9b6e-82f4740b212f@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us-ghhhyty.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20us-1-h-2
 vless://47258f25-b9c0-4fea-8d2e-ecbf50f7ba35@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=at-543jhgkk.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20at-1-h-1
 vless://a9fefc12-8024-406a-8d8b-088efdf16587@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=ie-gjhkgkgh.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20ie-1-h-2
-vless://74f57e86-6640-489b-88dd-c9ee40ece0b7@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=is-jfhbjasdf.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20is-1-h-2
-vless://84ff8e31-ae43-449e-a865-403ce506a8bd@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=de-hghf4436.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20de-1-h-2
 
 
 
