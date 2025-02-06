@@ -1,10 +1,5 @@
 ShadowSocks:
 
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKSWhONnJCS2thRWJvTE5YVlN2NXJx@142.4.216.225:80#Rayan - SS - VPNBook - S1
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXSjlzZ3ZCWWR0NFN5ZHd4@52.237.155.68:443?outline=1&prefix=POST%20U2ad83cZ#Rayan - SS - IFI - S2
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJSVlwY2N2OUFsQkhabWtZ@52.237.155.68:443?outline=1&prefix=POST%20T2ad83dL#Rayan - SS - IFI - S3
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5WTVkUjFjVTFkam1pWHNh@52.237.155.68:443?outline=1&prefix=POST%20R2ad83eV#Rayan - SS - IFI - S4
-
 
 
 SSHmax FASTLY :
@@ -38,7 +33,6 @@ vless://fa3f60c7-612a-5767-8568-a77c2409fc42@zmaoz.faculty.ucdavis.edu:443?secur
 SSHmax GCORE :
 
 vless://9b1f565d-50fb-445f-832a-d39475989f72@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=it11.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20it-1-11
-vless://dfb6f849-e7d7-4994-80f7-1bd19b593a2a@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=uk35.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20uk-1-35
 vless://4b9a3393-6e60-4e27-bb11-f48b80f66f03@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=kz25.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20kz-1-25
 vless://9c20012a-547e-46a8-aaea-1a7400ddee06@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=nl49.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20nl-1-49
 vless://054d503d-4748-47a6-8118-71a96c51f2d9@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=nl50.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20nl-2-50
@@ -46,14 +40,10 @@ vless://63c526af-a758-4b60-b8c7-dd2b3f41cf22@81.28.12.12:443?security=tls&sni=gc
 vless://f8f1763f-2411-4170-903d-0ad30a49d1c5@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=ca-f-1.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20ca-f-1
 vless://7beb2597-f767-4dd4-993e-2cb3c41be5a2@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=jp-f-1.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20jp-f-1
 vless://6470135d-ef6c-4417-b99a-248e78e0b544@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/serverssh&host=sg-3d.maxima.us.kg&encryption=none#Rayan%20-%20SVS%20-%20GC%20-%20sg-30-1
-vless://8b2485ed-fb6c-4110-96cd-acaf49c1e1dc@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=ua-cvs5.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20ua-1-1
 vless://9c20012a-547e-46a8-aaea-1a7400ddee06@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=fr-1-vpr.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20nl-1-v-2
 vless://054d503d-4748-47a6-8118-71a96c51f2d9@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=fr-2-vpr.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20nl-2-v-2
-vless://c8705ff9-da52-4061-9090-d74842d2199a@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=ie-gfgd.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20ie-1-c-1
 vless://4b9a3393-6e60-4e27-bb11-f48b80f66f03@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=kz-gsfhf5366.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20kz-1-v-1
 vless://9b1f565d-50fb-445f-832a-d39475989f72@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=it-fghgfjg55.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20it-1-v-1
-vless://2766401a-3722-4017-b2e7-f7b45453ca32@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us-jgh5365.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20us-1-c-1
-vless://9802cad1-ead5-48a8-b408-9793312c14ac@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/serverssh&host=sg-30-fgsfgbfn.maxima.us.kg&encryption=none#Rayan%20-%20SVS%20-%20GC%20-%20sg-r-4
 vless://63c526af-a758-4b60-b8c7-dd2b3f41cf22@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=tr-gfsghjk.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20tr-1-v-2
 vless://9b1f565d-50fb-445f-832a-d39475989f72@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=it-fghj45.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20it-1-v-2
 vless://054d503d-4748-47a6-8118-71a96c51f2d9@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/VLESS&host=nl-kseuo.maxima.us.kg&encryption=none#Rayan%20-%20RVP%20-%20GC%20-%20nl-2-v-3
@@ -84,7 +74,6 @@ vless://fee9a16f-d8f2-4101-bee4-d5c2f037d071@81.28.12.12:443?security=tls&sni=gc
 vless://0ee358fe-8d55-445b-89d7-4ed76d58a515@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=at-ftgsrh.maxima.us.kg&encryption=none#Rayan%20-%20GSS%20-%20GC%20-%20G.21%20-%20AT
 vless://ee3efad1-086d-4ddf-8b01-b264df80e3ea@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=de-fgfdnfdn.maxima.us.kg&encryption=none#Rayan%20-%20GSS%20-%20GC%20-%20G.22%20-%20DE
 vless://bc45c787-4176-4d3b-bf87-225be8ae8216@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=is-55cvzd.maxima.us.kg&encryption=none#Rayan%20-%20GSS%20-%20GC%20-%20G.23%20-%20IS
-vless://bbeb53f1-1380-43a2-b5eb-f6181cf15a9a@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=uk-weret.maxima.us.kg&encryption=none#Rayan%20-%20GSS%20-%20GC%20-%20G.24%20-%20UK
 vless://1181e27f-d6fd-4526-b60b-0bc6c96aee22@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us-56ffs.maxima.us.kg&encryption=none#Rayan%20-%20GSS%20-%20GC%20-%20G.25%20-%20US
 vless://1321b7d4-998a-4107-992e-a2820d101125@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=at-56hhh.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20G.26%20-%20AT
 vless://9cc1d633-be7b-4077-9b26-fdf989a0d2de@81.28.12.12:443?security=tls&sni=gcore.com&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=br-469ggh.maxima.us.kg&encryption=none#Rayan%20-%20VPH%20-%20GC%20-%20G.27%20-%20BR
@@ -121,12 +110,30 @@ vless://c15db90a-b96b-421d-87a5-7b32ad8e5be3@81.28.12.12:443?security=tls&sni=gc
 vless://7ae02022-888c-482e-9d4e-e770518c2850@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us-523fgfg.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20G.58%20-%20US
 
 
-Without CDN :
 
-vmess://eyJhZGQiOiJ1cy0yMS5oaWh1Lm5ldCIsImFpZCI6IjAiLCJob3N0IjoidXMtMjEuaGlodS5uZXQiLCJpZCI6IjFhMmUxNWIwLWRjZmEtMTFlZi1iNzM5LTIwNWM2ZDVmNWQ3OCIsIm5ldCI6IndzIiwicGF0aCI6Ii9sNDJrMHU2dyIsInBvcnQiOiI0NDMiLCJwcyI6IlJheWFuIC0gRlNTIC0gVi44NCAtIExBIiwic2N5IjoiYXV0byIsInNuaSI6Inp1bGEuaXIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=
-vless://4d2011c2-0c4c-4257-87a7-65d8c1d2a48a@nl1.vlessvh.site:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=nl1.vlessvh.site&encryption=none#Rayan%20-%20VPH%20-%20V.90%20-%20NL
-vless://9cb5fb7c-6333-4088-988e-56c216b5e1f5@us1.vlessvh.site:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us1.vlessvh.site&encryption=none#Rayan%20-%20VPH%20-%20V.91%20-%20US
-vless://68e314df-dfb9-46a9-97c4-cd16c48d6c54@de1.vlessvh.site:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=de1.vlessvh.site&encryption=none#Rayan%20-%20VPH%20-%20V.92%20-%20DE
+GAFN HYSTERIA :
+
+hy2://09f8d33b-62ae-4cb4-89eb-00e9570f30a6@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU1
+hy2://7a875369-b582-425a-9f97-db3a432b444c@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU2
+hy2://7808b21b-b9b4-49f9-b0a8-8f507be11629@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU3
+hy2://f901861b-6491-450c-b500-606b2e921625@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU4
+hy2://5eaa121d-4362-444d-8219-29b02c35303a@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU5
+hy2://729922eb-2020-40a1-89f9-6eb97abcaa02@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU6
+hy2://0495fe07-c7fe-4af6-9827-069b32457110@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU7
+hy2://649c1549-da73-406a-a184-9b4c4347d76c@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU8
+hy2://ab4baa8c-98e2-419c-a0e9-df7faf09ebbe@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU9
+hy2://a6c590b8-12b9-4107-b840-e79d95961a70@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU10
+hy2://07d4ef3b-1430-451a-acd9-a4d4e7c0456d@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU11
+hy2://dd7157a5-b416-49e7-b00e-8c66522f1434@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU12
+hy2://4f3079e5-29a3-49a0-a820-f1b08cc04f39@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU13
+hy2://92d1a9ea-0cd8-4efb-b53f-b6496f8abef8@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU14
+hy2://f59c9c59-2366-4d6c-8477-b8f57568cb68@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU15
+hy2://ff006ffb-ad09-4d79-8c27-91dcd9123d8b@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU16
+hy2://29221c3e-b3e9-4297-a50d-bf85a2bed80b@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU17
+hy2://80f97b15-d8ad-4863-b4ed-22f1bdc534a9@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU18
+hy2://298e4dd5-37b2-4021-9867-490b829cd646@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU19
+hy2://48670f89-8e15-4d5e-97db-cc2e5064b491@81.177.3.227:43615?insecure=1&sni=dxobg4azmk.gafnode.sbs#Rayan%20-%20GAFN%20-%20Hys2%20-%20RU20
+
 
 
 GAFN Fastly:
