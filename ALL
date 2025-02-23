@@ -18,7 +18,21 @@ vless://0c5dc414-acd7-4bca-afab-a7aed35a044f@81.28.12.12:443?security=tls&sni=gc
 vless://3bedc331-da04-4e76-a146-4867fe1b8b90@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=tr-8638fsdnh.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20G.104%20-%20TR
 vless://ccde9013-d862-4651-a269-82667a677042@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us-35hbthnjt.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20G.106%20-%20US
 
+
 GAFN Fastly:
+
+vless://fe783d5e-4263-44c9-b0c7-d9ed87de5e40@85.208.109.41:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=grpc&serviceName=vless-grpc&encryption=none#Rayan%20-%20VPH%20-%20gRPC-100%20-%20AT
+vless://35a625f7-7761-4e31-9820-dfea870d0300@193.203.203.45:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=grpc&serviceName=vless-grpc&encryption=none#Rayan%20-%20VPH%20-%20gRPC-101%20-%20CA
+vless://ac06c636-7e15-476f-b093-96498fb5a463@146.19.233.138:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=grpc&serviceName=vless-grpc&encryption=none#Rayan%20-%20VPH%20-%20gRPC-102%20-%20DE
+vless://1d4ff6b3-938a-4d95-84e7-6dffe0ddf080@91.194.161.69:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=grpc&serviceName=vless-grpc&encryption=none#Rayan%20-%20VPH%20-%20gRPC-103%20-%20IS
+vless://2045bdca-4043-485a-a3e7-0e7603287afb@185.234.247.110:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=grpc&serviceName=vless-grpc&encryption=none#Rayan%20-%20VPH%20-%20gRPC-104%20-%20NL
+vless://1c7d1114-f935-4534-b124-fd429f3b07e7@103.35.189.148:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=grpc&serviceName=vless-grpc&encryption=none#Rayan%20-%20VPH%20-%20gRPC-105%20-%20US
+vless://fe783d5e-4263-44c9-b0c7-d9ed87de5e40@85.208.109.41:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=at1-vph.msnegar.eu.org&encryption=none#Rayan%20-%20VPH%20-%20WS-100%20-%20AT
+vless://35a625f7-7761-4e31-9820-dfea870d0300@193.203.203.45:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=ca1-vph.msnegar.eu.org&encryption=none#Rayan%20-%20VPH%20-%20WS-101%20-%20CA
+vless://ac06c636-7e15-476f-b093-96498fb5a463@146.19.233.138:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=de1-vph.msnegar.eu.org&encryption=none#Rayan%20-%20VPH%20-%20WS-102%20-%20DE
+vless://1d4ff6b3-938a-4d95-84e7-6dffe0ddf080@91.194.161.69:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=is1-vph.msnegar.eu.org&encryption=none#Rayan%20-%20VPH%20-%20WS-103%20-%20IS
+vless://2045bdca-4043-485a-a3e7-0e7603287afb@185.234.247.110:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=nl1-vph.msnegar.eu.org&encryption=none#Rayan%20-%20VPH%20-%20WS-104%20-%20NL
+vless://1c7d1114-f935-4534-b124-fd429f3b07e7@103.35.189.148:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us1-vph.msnegar.eu.org&encryption=none#Rayan%20-%20VPH%20-%20WS-105%20-%20US
 
 vless://48d4f576-9b9e-414d-97df-44ace542e9f1@5.181.21.181:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=at1-gss.msnegar.eu.org&encryption=none#Rayan%20-%20GSS%20-%20WS-100%20-%20AT
 vless://4d42e14d-6f0a-42b5-b28e-47bc6920cfad@80.92.204.207:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=de1-gss.msnegar.eu.org&encryption=none#Rayan%20-%20GSS%20-%20WS-101%20-%20DE
