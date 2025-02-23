@@ -20,6 +20,11 @@ vless://ccde9013-d862-4651-a269-82667a677042@81.28.12.12:443?security=tls&sni=gc
 
 GAFN Fastly:
 
+vless://48d4f576-9b9e-414d-97df-44ace542e9f1@5.181.21.181:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=at1-gss.msnegar.eu.org&encryption=none#Rayan%20-%20GSS%20-%20WS-100%20-%20AT
+vless://4d42e14d-6f0a-42b5-b28e-47bc6920cfad@80.92.204.207:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=de1-gss.msnegar.eu.org&encryption=none#Rayan%20-%20GSS%20-%20WS-101%20-%20DE
+vless://e04fd6e4-d570-4bf0-9bd7-c7f7f830e521@91.194.161.15:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=is1-gss.msnegar.eu.org&encryption=none#Rayan%20-%20GSS%20-%20WS-102%20-%20IS
+vless://4a4b18ce-3a21-4659-9b34-a752baa21a9e@95.164.69.101:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=uk1-gss.msnegar.eu.org&encryption=none#Rayan%20-%20GSS%20-%20WS-103%20-%20UK
+vless://82e16024-0992-4f9f-b484-2e10a236556d@74.119.194.66:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=us1-gss.msnegar.eu.org&encryption=none#Rayan%20-%20GSS%20-%20WS-104%20-%20US
 vmess://eyJhZGQiOiJ1cy0yMS5oaWh1Lm5ldCIsImFpZCI6IjAiLCJob3N0IjoidXMtMjEuaGlodS5uZXQiLCJpZCI6ImJlMTM1MjMwLWYwYWQtMTFlZi1iNzM2LTIwNWM2ZDVmNWQ3OCIsIm5ldCI6IndzIiwicGF0aCI6Ii8zZGZqbW41OSIsInBvcnQiOiI0NDMiLCJwcyI6IlJheWFuIC0gRlNTIC0gVi4xMDAgLSBXUyAtIExBIiwic2N5IjoiYXV0byIsInNuaSI6Inp1bGEuaXIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=
 vmess://eyJhZGQiOiJldS0yLmhpaHUubmV0IiwiYWlkIjoiMCIsImhvc3QiOiJldS0yLmhpaHUubmV0IiwiaWQiOiJlOGU3ZWU2MC1mMGFkLTExZWYtYjAzNC0yMDVjNmQ1ZjVkNzgiLCJuZXQiOiJ3cyIsInBhdGgiOiIvOTJkbnNqb2wiLCJwb3J0IjoiNDQzIiwicHMiOiJSYXlhbiAtIEZTUyAtIFYuMTAxIC0gV1MgLSBFVSIsInNjeSI6ImF1dG8iLCJzbmkiOiJ6dWxhLmlyIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
 vmess://eyJhZGQiOiJzZy0xLmhpaHUubmV0IiwiYWlkIjoiMCIsImhvc3QiOiJzZy0xLmhpaHUubmV0IiwiaWQiOiI3MWY0NGRmMC1mMGFkLTExZWYtYjkzMS0yMDVjNmQ1ZjVkNzgiLCJuZXQiOiJ3cyIsInBhdGgiOiIvOTBrcGxlNmQiLCJwb3J0IjoiNDQzIiwicHMiOiJSYXlhbiAtIEZTUyAtIFYuMTAyIC0gV1MgLSBTRyIsInNjeSI6ImF1dG8iLCJzbmkiOiJ6dWxhLmlyIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
