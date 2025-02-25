@@ -31,10 +31,6 @@ vless://886f7c66-4f5a-571c-8e1b-944ba68e6ae7@zmaoz.faculty.ucdavis.edu:80?securi
 
 SSHmax GCORE :
 
-vless://7688973a-5d7d-4a91-890d-ec000110d797@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=fi-45htrryr.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20G.99%20-%20FI
-vless://c7696d80-519a-40b4-86ca-069d40fb7aaf@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=de-63genrjur.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20G.100%20-%20DE
-vless://98700cf1-ce0f-46ae-8591-5b2039d8ef1d@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=ie-6gsfdhgdfg.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20G.101%20-%20IE
-vless://0c5dc414-acd7-4bca-afab-a7aed35a044f@81.28.12.12:443?security=tls&sni=gcore.lu&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=nl-fsghehu.maxima.us.kg&encryption=none#Rayan%20-%20CBT%20-%20GC%20-%20G.103%20-%20NL
 
 
 DIRECT CONFIG:
