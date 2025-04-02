@@ -63,6 +63,13 @@ SSHmax GCORE :
 DIRECT CONFIG:
 
 
+
+vless://1688039e-a45f-499e-b9f4-c098c87d3b32@zula.ir:443?security=tls&sni=cr7.rayan.dpdns.org&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=cr7.rayan.dpdns.org&encryption=none#Rayan%20-%20CF%20-%20WSCT-101%20-%20C-01%20-%20%F0%9F%8C%93%20t.me/Rayan_Config
+vless://1688039e-a45f-499e-b9f4-c098c87d3b32@digitalocean.com:443?security=tls&sni=cr7.rayan.dpdns.org&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=cr7.rayan.dpdns.org&encryption=none#Rayan%20-%20CF%20-%20WSCT-101%20-%20C-02%20-%20%F0%9F%8C%93%20t.me/Rayan_Config
+vless://1688039e-a45f-499e-b9f4-c098c87d3b32@sourceforge.net:443?security=tls&sni=cr7.rayan.dpdns.org&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=cr7.rayan.dpdns.org&encryption=none#Rayan%20-%20CF%20-%20WSCT-101%20-%20C-03%20-%20%F0%9F%8C%93%20t.me/Rayan_Config
+vless://a0bbc599-fa28-4b1a-9194-ec2ef5af001d@www.speedtest.net:443?security=tls&sni=cr7.rayan-dns.dpdns.org&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=cr7.rayan-dns.dpdns.org&encryption=none#Rayan%20-%20CF%20-%20WSCT-101%20-%20C-04%20-%20%F0%9F%8C%93%20t.me/Rayan_Config
+vless://a0bbc599-fa28-4b1a-9194-ec2ef5af001d@jquery.com:443?security=tls&sni=cr7.rayan-dns.dpdns.org&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=cr7.rayan-dns.dpdns.org&encryption=none#Rayan%20-%20CF%20-%20WSCT-101%20-%20C-05%20-%20%F0%9F%8C%93%20t.me/Rayan_Config
+vless://a0bbc599-fa28-4b1a-9194-ec2ef5af001d@cdnjs.com:443?security=tls&sni=cr7.rayan-dns.dpdns.org&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=cr7.rayan-dns.dpdns.org&encryption=none#Rayan%20-%20CF%20-%20WSCT-101%20-%20C-06%20-%20%F0%9F%8C%93%20t.me/Rayan_Config
 vless://a8872ddc-b82f-4af8-967a-9732142d835b@95.164.4.101:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=95.164.4.101&encryption=none#Rayan%20-%20CBT%20-%20WSCT-101%20-%20BR%20-%20%F0%9F%8F%80%20t.me/Rayan_Config
 vless://9abc9622-8250-471a-8b79-87820fc5b2e9@95.164.44.140:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=95.164.44.140&encryption=none#Rayan%20-%20CBT%20-%20WSCT-102%20-%20IE%20-%20%F0%9F%8F%80%20t.me/Rayan_Config
 vless://cdb421d3-c806-43ba-8609-2ea9261e9f31@5.253.41.229:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/vless&host=5.253.41.229&encryption=none#Rayan%20-%20CBT%20-%20WSCT-103%20-%20JP%20-%20%F0%9F%8F%80%20t.me/Rayan_Config
