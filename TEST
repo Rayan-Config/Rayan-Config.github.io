@@ -4740,7 +4740,7 @@
   "stats": {}
 },
     {
-        "remarks": "🌵 Rayan - MULTI-LOCATION-I - CF - Trojan - Direct 🔥",
+        "remarks": "🌵 Rayan - MULTI-LOC-I - CF - Trojan - Direct 🔥",
         "log": {
             "loglevel": "warning"
         },
@@ -4751,6 +4751,13 @@
                     "address": "178.22.122.100",
                     "domains": [
                         "geosite:openai"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "full:zula.ir"
                     ],
                     "skipFallback": true
                 },
@@ -4819,7 +4826,7 @@
                     },
                     "wsSettings": {
                         "host": "t1.sanam.dpdns.org",
-                        "path": "/?ed=2560"
+                        "path": "/trKOJugAtxuZbx43Xb?ed=2560"
                     },
                     "tlsSettings": {
                         "allowInsecure": false,
@@ -4827,7 +4834,7 @@
                         "alpn": [
                             "http/1.1"
                         ],
-                        "serverName": "t1.saNAm.DpDns.org"
+                        "serverName": "T1.sanAM.DPdNs.org"
                     }
                 },
                 "tag": "proxy"
@@ -4942,7 +4949,175 @@
         "stats": {}
     },
     {
-        "remarks": "🌵 Rayan - MULTI-LOCATION-II - CF - Trojan - Direct 🔥",
+        "remarks": "🌵 Rayan - MULTI-LOC-II - CF - Trojan - Direct 🔥",
+        "log": {
+            "loglevel": "warning"
+        },
+        "dns": {
+            "servers": [
+                "https://8.8.8.8/dns-query",
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "full:fonts.net"
+                    ],
+                    "skipFallback": true
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "port": 10808,
+                "protocol": "socks",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true,
+                    "userLevel": 8
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "socks-in"
+            },
+            {
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "trojan",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "fonts.net",
+                            "port": 443,
+                            "password": "t.me/Rayan_Config",
+                            "level": 8
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "security": "tls",
+                    "sockopt": {
+                        "domainStrategy": "UseIPv4v6"
+                    },
+                    "wsSettings": {
+                        "host": "t1.saman.dpdns.org",
+                        "path": "/trTwxdeMGnthjCjiD6?ed=2560"
+                    },
+                    "tlsSettings": {
+                        "allowInsecure": false,
+                        "fingerprint": "randomized",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "serverName": "T1.samaN.DPdNs.ORG"
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "protocol": "dns",
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "policy": {
+            "levels": {
+                "8": {
+                    "connIdle": 300,
+                    "downlinkOnly": 1,
+                    "handshake": 4,
+                    "uplinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "socks-in"
+                    ],
+                    "port": "53",
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "ip": [
+                        "8.8.8.8"
+                    ],
+                    "port": "53",
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "🌵 Rayan - MULTI-LOC-III - CF - Trojan - Direct 🔥",
         "log": {
             "loglevel": "warning"
         },
@@ -4953,6 +5128,13 @@
                     "address": "178.22.122.100",
                     "domains": [
                         "geosite:openai"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "full:www.speedtest.net"
                     ],
                     "skipFallback": true
                 },
@@ -5020,210 +5202,8 @@
                         "domainStrategy": "UseIPv4v6"
                     },
                     "wsSettings": {
-                        "host": "t1.saman.dpdns.org",
-                        "path": "/?ed=2560"
-                    },
-                    "tlsSettings": {
-                        "allowInsecure": false,
-                        "fingerprint": "randomized",
-                        "alpn": [
-                            "http/1.1"
-                        ],
-                        "serverName": "t1.saman.dpdns.org"
-                    }
-                },
-                "tag": "proxy"
-            },
-            {
-                "protocol": "dns",
-                "tag": "dns-out"
-            },
-            {
-                "protocol": "freedom",
-                "settings": {
-                    "domainStrategy": "UseIP"
-                },
-                "tag": "direct"
-            },
-            {
-                "protocol": "blackhole",
-                "settings": {
-                    "response": {
-                        "type": "http"
-                    }
-                },
-                "tag": "block"
-            }
-        ],
-        "policy": {
-            "levels": {
-                "8": {
-                    "connIdle": 300,
-                    "downlinkOnly": 1,
-                    "handshake": 4,
-                    "uplinkOnly": 1
-                }
-            },
-            "system": {
-                "statsOutboundUplink": true,
-                "statsOutboundDownlink": true
-            }
-        },
-        "routing": {
-            "domainStrategy": "IPIfNonMatch",
-            "rules": [
-                {
-                    "inboundTag": [
-                        "dns-in"
-                    ],
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "socks-in"
-                    ],
-                    "port": "53",
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns"
-                    ],
-                    "ip": [
-                        "8.8.8.8"
-                    ],
-                    "port": "53",
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "178.22.122.100"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns"
-                    ],
-                    "outboundTag": "proxy",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:private",
-                        "geosite:category-ir",
-                        "geosite:openai"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:private",
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "network": "udp",
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "network": "tcp",
-                    "outboundTag": "proxy",
-                    "type": "field"
-                }
-            ]
-        },
-        "stats": {}
-    },
-    {
-        "remarks": "🌵 Rayan - MULTI-LOCATION-III - CF - Trojan - Direct 🔥",
-        "log": {
-            "loglevel": "warning"
-        },
-        "dns": {
-            "servers": [
-                "https://8.8.8.8/dns-query",
-                {
-                    "address": "178.22.122.100",
-                    "domains": [
-                        "geosite:openai"
-                    ],
-                    "skipFallback": true
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
-                }
-            ],
-            "queryStrategy": "UseIP",
-            "tag": "dns"
-        },
-        "inbounds": [
-            {
-                "port": 10808,
-                "protocol": "socks",
-                "settings": {
-                    "auth": "noauth",
-                    "udp": true,
-                    "userLevel": 8
-                },
-                "sniffing": {
-                    "destOverride": [
-                        "http",
-                        "tls"
-                    ],
-                    "enabled": true,
-                    "routeOnly": true
-                },
-                "tag": "socks-in"
-            },
-            {
-                "port": 10853,
-                "protocol": "dokodemo-door",
-                "settings": {
-                    "address": "1.1.1.1",
-                    "network": "tcp,udp",
-                    "port": 53
-                },
-                "tag": "dns-in"
-            }
-        ],
-        "outbounds": [
-            {
-                "protocol": "trojan",
-                "settings": {
-                    "servers": [
-                        {
-                            "address": "fonts.net",
-                            "port": 443,
-                            "password": "t.me/Rayan_Config",
-                            "level": 8
-                        }
-                    ]
-                },
-                "streamSettings": {
-                    "network": "ws",
-                    "security": "tls",
-                    "sockopt": {
-                        "domainStrategy": "UseIPv4v6"
-                    },
-                    "wsSettings": {
                         "host": "t2.sanam.dpdns.org",
-                        "path": "/?ed=2560"
+                        "path": "/tr5xMWF8s05u0iyCoZ?ed=2560"
                     },
                     "tlsSettings": {
                         "allowInsecure": false,
@@ -5231,7 +5211,7 @@
                         "alpn": [
                             "http/1.1"
                         ],
-                        "serverName": "t2.saNAm.DpDns.org"
+                        "serverName": "t2.SAnam.DpdNS.orG"
                     }
                 },
                 "tag": "proxy"
@@ -5346,7 +5326,7 @@
         "stats": {}
     },
     {
-        "remarks": "🌵 Rayan - MULTI-LOCATION-IV - CF - Trojan - Direct 🔥",
+        "remarks": "🌵 Rayan - MULTI-LOC-IV - CF - Trojan - Direct 🔥",
         "log": {
             "loglevel": "warning"
         },
@@ -5354,19 +5334,9 @@
             "servers": [
                 "https://8.8.8.8/dns-query",
                 {
-                    "address": "178.22.122.100",
-                    "domains": [
-                        "geosite:openai"
-                    ],
-                    "skipFallback": true
-                },
-                {
                     "address": "8.8.8.8",
                     "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
+                        "full:cdnjs.com"
                     ],
                     "skipFallback": true
                 }
@@ -5425,7 +5395,7 @@
                     },
                     "wsSettings": {
                         "host": "t2.saman.dpdns.org",
-                        "path": "/?ed=2560"
+                        "path": "/trvcTd0Cmrl3PNIp2b?ed=2560"
                     },
                     "tlsSettings": {
                         "allowInsecure": false,
@@ -5433,7 +5403,7 @@
                         "alpn": [
                             "http/1.1"
                         ],
-                        "serverName": "t2.saman.dpdns.org"
+                        "serverName": "T2.SAmAN.dpDnS.orG"
                     }
                 },
                 "tag": "proxy"
@@ -5503,243 +5473,10 @@
                     "type": "field"
                 },
                 {
-                    "ip": [
-                        "178.22.122.100"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
                     "inboundTag": [
                         "dns"
                     ],
                     "outboundTag": "proxy",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:private",
-                        "geosite:category-ir",
-                        "geosite:openai"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:private",
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "network": "udp",
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "network": "tcp",
-                    "outboundTag": "proxy",
-                    "type": "field"
-                }
-            ]
-        },
-        "stats": {}
-    },
-    {
-        "remarks": "💦 4 - Trojan - IPv4 : 443",
-        "log": {
-            "loglevel": "warning"
-        },
-        "dns": {
-            "servers": [
-                {
-                    "address": "fakedns",
-                    "domains": [
-                        "geosite:category-ir"
-                    ]
-                },
-                "https://8.8.8.8/dns-query",
-                {
-                    "address": "178.22.122.100",
-                    "domains": [
-                        "geosite:openai"
-                    ],
-                    "skipFallback": true
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
-                }
-            ],
-            "queryStrategy": "UseIP",
-            "tag": "dns"
-        },
-        "inbounds": [
-            {
-                "port": 10808,
-                "protocol": "socks",
-                "settings": {
-                    "auth": "noauth",
-                    "udp": true,
-                    "userLevel": 8
-                },
-                "sniffing": {
-                    "destOverride": [
-                        "http",
-                        "tls",
-                        "fakedns"
-                    ],
-                    "enabled": true,
-                    "routeOnly": true
-                },
-                "tag": "socks-in"
-            },
-            {
-                "port": 10853,
-                "protocol": "dokodemo-door",
-                "settings": {
-                    "address": "1.1.1.1",
-                    "network": "tcp,udp",
-                    "port": 53
-                },
-                "tag": "dns-in"
-            }
-        ],
-        "outbounds": [
-            {
-                "protocol": "trojan",
-                "settings": {
-                    "servers": [
-                        {
-                            "address": "172.67.218.35",
-                            "port": 443,
-                            "password": "t.me/Rayan_Config",
-                            "level": 8
-                        }
-                    ]
-                },
-                "streamSettings": {
-                    "network": "ws",
-                    "security": "tls",
-                    "sockopt": {
-                        "domainStrategy": "UseIPv4v6"
-                    },
-                    "wsSettings": {
-                        "host": "t2.sanam.dpdns.org",
-                        "path": "/trWe2S8WzjoZvD8zN4?ed=2560"
-                    },
-                    "tlsSettings": {
-                        "allowInsecure": false,
-                        "fingerprint": "randomized",
-                        "alpn": [
-                            "http/1.1"
-                        ],
-                        "serverName": "t2.sANam.DPdNS.oRg"
-                    }
-                },
-                "tag": "proxy"
-            },
-            {
-                "protocol": "dns",
-                "tag": "dns-out"
-            },
-            {
-                "protocol": "freedom",
-                "settings": {
-                    "domainStrategy": "UseIP"
-                },
-                "tag": "direct"
-            },
-            {
-                "protocol": "blackhole",
-                "settings": {
-                    "response": {
-                        "type": "http"
-                    }
-                },
-                "tag": "block"
-            }
-        ],
-        "policy": {
-            "levels": {
-                "8": {
-                    "connIdle": 300,
-                    "downlinkOnly": 1,
-                    "handshake": 4,
-                    "uplinkOnly": 1
-                }
-            },
-            "system": {
-                "statsOutboundUplink": true,
-                "statsOutboundDownlink": true
-            }
-        },
-        "routing": {
-            "domainStrategy": "IPIfNonMatch",
-            "rules": [
-                {
-                    "inboundTag": [
-                        "dns-in"
-                    ],
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "socks-in"
-                    ],
-                    "port": "53",
-                    "outboundTag": "dns-out",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns"
-                    ],
-                    "ip": [
-                        "8.8.8.8"
-                    ],
-                    "port": "53",
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "178.22.122.100"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "inboundTag": [
-                        "dns"
-                    ],
-                    "outboundTag": "proxy",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:private",
-                        "geosite:category-ir",
-                        "geosite:openai"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:private",
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
                     "type": "field"
                 },
                 {
