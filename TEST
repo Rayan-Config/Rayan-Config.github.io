@@ -2502,7 +2502,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "homestead.com",
+            "address": "cdnjs.com",
             "port": 443,
             "users": [
               {
@@ -2535,7 +2535,7 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "r4.saman.dpdns.org"
+            "Host": "r4.sanam.dpdns.org"
           },
           "path": "/?ed=2560"
         }
@@ -2897,7 +2897,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "digg.com",
+            "address": "fonts.net",
             "port": 443,
             "users": [
               {
