@@ -5494,7 +5494,7 @@
         "stats": {}
     },
     {
-        "remarks": "💦 2 - VLESS F - Domain : 443",
+        "remarks": "☘️ Rayan - CF - VLess - Fragment - TLS-Hello 🔥",
         "log": {
             "loglevel": "warning"
         },
@@ -5584,7 +5584,7 @@
                         "dialerProxy": "fragment"
                     },
                     "wsSettings": {
-                        "host": "cr7.parsa.filegear-sg.me",
+                        "host": "f1.parsa.filegear-sg.me",
                         "path": "/?ed=2560"
                     },
                     "tlsSettings": {
@@ -5593,7 +5593,7 @@
                         "alpn": [
                             "http/1.1"
                         ],
-                        "serverName": "cR7.paRsa.fiLegEar-Sg.Me"
+                        "serverName": "F1.paRsa.fiLegEar-Sg.Me"
                     }
                 },
                 "tag": "proxy"
@@ -5604,6 +5604,910 @@
                 "settings": {
                     "fragment": {
                         "packets": "tlshello",
+                        "length": "8-12",
+                        "interval": "1-2"
+                    },
+                    "domainStrategy": "UseIPv4v6"
+                }
+            },
+            {
+                "protocol": "dns",
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "policy": {
+            "levels": {
+                "8": {
+                    "connIdle": 300,
+                    "downlinkOnly": 1,
+                    "handshake": 4,
+                    "uplinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "socks-in"
+                    ],
+                    "port": "53",
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "ip": [
+                        "8.8.8.8"
+                    ],
+                    "port": "53",
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "178.22.122.100"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private",
+                        "geosite:category-ir",
+                        "geosite:openai"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private",
+                        "geoip:ir"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "☘️ Rayan - CF - VLess - Fragment - 1-1 🔥",
+        "log": {
+            "loglevel": "warning"
+        },
+        "dns": {
+            "servers": [
+                "https://8.8.8.8/dns-query",
+                {
+                    "address": "178.22.122.100",
+                    "domains": [
+                        "geosite:openai"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "full:zula.ir"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "geosite:category-ir"
+                    ],
+                    "expectIPs": [
+                        "geoip:ir"
+                    ],
+                    "skipFallback": true
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "port": 10808,
+                "protocol": "socks",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true,
+                    "userLevel": 8
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "socks-in"
+            },
+            {
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "zula.ir",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "4f024c96-8dce-4cbe-a94a-f069adc74d3c",
+                                    "encryption": "none",
+                                    "level": 8
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "security": "tls",
+                    "sockopt": {
+                        "dialerProxy": "fragment"
+                    },
+                    "wsSettings": {
+                        "host": "f2.parisa.filegear-sg.me",
+                        "path": "/?ed=2560"
+                    },
+                    "tlsSettings": {
+                        "allowInsecure": false,
+                        "fingerprint": "randomized",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "serverName": "f2.PariSa.FileGeaR-sG.mE"
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "tag": "fragment",
+                "protocol": "freedom",
+                "settings": {
+                    "fragment": {
+                        "packets": "1-1",
+                        "length": "8-12",
+                        "interval": "1-2"
+                    },
+                    "domainStrategy": "UseIPv4v6"
+                }
+            },
+            {
+                "protocol": "dns",
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "policy": {
+            "levels": {
+                "8": {
+                    "connIdle": 300,
+                    "downlinkOnly": 1,
+                    "handshake": 4,
+                    "uplinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "socks-in"
+                    ],
+                    "port": "53",
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "ip": [
+                        "8.8.8.8"
+                    ],
+                    "port": "53",
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "178.22.122.100"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private",
+                        "geosite:category-ir",
+                        "geosite:openai"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private",
+                        "geoip:ir"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "☘️ Rayan - CF - VLess - Fragment - 1-2 🔥",
+        "log": {
+            "loglevel": "warning"
+        },
+        "dns": {
+            "servers": [
+                "https://8.8.8.8/dns-query",
+                {
+                    "address": "178.22.122.100",
+                    "domains": [
+                        "geosite:openai"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "full:fonts.net"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "geosite:category-ir"
+                    ],
+                    "expectIPs": [
+                        "geoip:ir"
+                    ],
+                    "skipFallback": true
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "port": 10808,
+                "protocol": "socks",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true,
+                    "userLevel": 8
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "socks-in"
+            },
+            {
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "fonts.net",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "21cf57f2-391f-4e7b-91ac-8b650e0a2f4c",
+                                    "encryption": "none",
+                                    "level": 8
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "security": "tls",
+                    "sockopt": {
+                        "dialerProxy": "fragment"
+                    },
+                    "wsSettings": {
+                        "host": "f3.parmis.filegear-sg.me",
+                        "path": "/?ed=2560"
+                    },
+                    "tlsSettings": {
+                        "allowInsecure": false,
+                        "fingerprint": "randomized",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "serverName": "f3.parMIs.fIleGEar-SG.Me"
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "tag": "fragment",
+                "protocol": "freedom",
+                "settings": {
+                    "fragment": {
+                        "packets": "1-2",
+                        "length": "8-12",
+                        "interval": "1-2"
+                    },
+                    "domainStrategy": "UseIPv4v6"
+                }
+            },
+            {
+                "protocol": "dns",
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "policy": {
+            "levels": {
+                "8": {
+                    "connIdle": 300,
+                    "downlinkOnly": 1,
+                    "handshake": 4,
+                    "uplinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "socks-in"
+                    ],
+                    "port": "53",
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "ip": [
+                        "8.8.8.8"
+                    ],
+                    "port": "53",
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "178.22.122.100"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private",
+                        "geosite:category-ir",
+                        "geosite:openai"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private",
+                        "geoip:ir"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "☘️ Rayan - CF - VLess - Fragment - 1-3 🔥",
+        "log": {
+            "loglevel": "warning"
+        },
+        "dns": {
+            "servers": [
+                "https://8.8.8.8/dns-query",
+                {
+                    "address": "178.22.122.100",
+                    "domains": [
+                        "geosite:openai"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "full:jquery.com"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "geosite:category-ir"
+                    ],
+                    "expectIPs": [
+                        "geoip:ir"
+                    ],
+                    "skipFallback": true
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "port": 10808,
+                "protocol": "socks",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true,
+                    "userLevel": 8
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "socks-in"
+            },
+            {
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "jquery.com",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "ee06e485-f3d1-46c0-97f4-e98040b828ed",
+                                    "encryption": "none",
+                                    "level": 8
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "security": "tls",
+                    "sockopt": {
+                        "dialerProxy": "fragment"
+                    },
+                    "wsSettings": {
+                        "host": "f4.sahel.filegear-sg.me",
+                        "path": "/?ed=2560"
+                    },
+                    "tlsSettings": {
+                        "allowInsecure": false,
+                        "fingerprint": "randomized",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "serverName": "f4.sAhEl.fIleGeAr-sG.mE"
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "tag": "fragment",
+                "protocol": "freedom",
+                "settings": {
+                    "fragment": {
+                        "packets": "1-3",
+                        "length": "8-12",
+                        "interval": "1-2"
+                    },
+                    "domainStrategy": "UseIPv4v6"
+                }
+            },
+            {
+                "protocol": "dns",
+                "tag": "dns-out"
+            },
+            {
+                "protocol": "freedom",
+                "settings": {
+                    "domainStrategy": "UseIP"
+                },
+                "tag": "direct"
+            },
+            {
+                "protocol": "blackhole",
+                "settings": {
+                    "response": {
+                        "type": "http"
+                    }
+                },
+                "tag": "block"
+            }
+        ],
+        "policy": {
+            "levels": {
+                "8": {
+                    "connIdle": 300,
+                    "downlinkOnly": 1,
+                    "handshake": 4,
+                    "uplinkOnly": 1
+                }
+            },
+            "system": {
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }
+        },
+        "routing": {
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "socks-in"
+                    ],
+                    "port": "53",
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "ip": [
+                        "8.8.8.8"
+                    ],
+                    "port": "53",
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "178.22.122.100"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "inboundTag": [
+                        "dns"
+                    ],
+                    "outboundTag": "proxy",
+                    "type": "field"
+                },
+                {
+                    "domain": [
+                        "geosite:private",
+                        "geosite:category-ir",
+                        "geosite:openai"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "ip": [
+                        "geoip:private",
+                        "geoip:ir"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                },
+                {
+                    "network": "udp",
+                    "outboundTag": "block",
+                    "type": "field"
+                },
+                {
+                    "network": "tcp",
+                    "outboundTag": "proxy",
+                    "type": "field"
+                }
+            ]
+        },
+        "stats": {}
+    },
+    {
+        "remarks": "☘️ Rayan - CF - VLess - Fragment - 1-5 🔥",
+        "log": {
+            "loglevel": "warning"
+        },
+        "dns": {
+            "servers": [
+                "https://8.8.8.8/dns-query",
+                {
+                    "address": "178.22.122.100",
+                    "domains": [
+                        "geosite:openai"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "full:digitalocean.com"
+                    ],
+                    "skipFallback": true
+                },
+                {
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "geosite:category-ir"
+                    ],
+                    "expectIPs": [
+                        "geoip:ir"
+                    ],
+                    "skipFallback": true
+                }
+            ],
+            "queryStrategy": "UseIP",
+            "tag": "dns"
+        },
+        "inbounds": [
+            {
+                "port": 10808,
+                "protocol": "socks",
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true,
+                    "userLevel": 8
+                },
+                "sniffing": {
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                },
+                "tag": "socks-in"
+            },
+            {
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                },
+                "tag": "dns-in"
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "vless",
+                "settings": {
+                    "vnext": [
+                        {
+                            "address": "digitalocean.com",
+                            "port": 443,
+                            "users": [
+                                {
+                                    "id": "258ab2cd-0489-4a8c-a076-e6c8b2327f34",
+                                    "encryption": "none",
+                                    "level": 8
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "streamSettings": {
+                    "network": "ws",
+                    "security": "tls",
+                    "sockopt": {
+                        "dialerProxy": "fragment"
+                    },
+                    "wsSettings": {
+                        "host": "f5.atenaa.filegear-sg.me",
+                        "path": "/?ed=2560"
+                    },
+                    "tlsSettings": {
+                        "allowInsecure": false,
+                        "fingerprint": "randomized",
+                        "alpn": [
+                            "http/1.1"
+                        ],
+                        "serverName": "f5.ATeNAa.fILegEAr-SG.Me"
+                    }
+                },
+                "tag": "proxy"
+            },
+            {
+                "tag": "fragment",
+                "protocol": "freedom",
+                "settings": {
+                    "fragment": {
+                        "packets": "1-5",
                         "length": "8-12",
                         "interval": "1-2"
                     },
