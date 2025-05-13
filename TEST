@@ -5569,7 +5569,7 @@
                             "port": 443,
                             "users": [
                                 {
-                                    "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                                    "id": "8df60790-c903-4661-b85d-64c0009378e5",
                                     "encryption": "none",
                                     "level": 8
                                 }
@@ -5585,7 +5585,7 @@
                     },
                     "wsSettings": {
                         "host": "cr7.parsa.filegear-sg.me",
-                        "path": "/ASkHN6GMDUMINsmT?ed=2560"
+                        "path": "/?ed=2560"
                     },
                     "tlsSettings": {
                         "allowInsecure": false,
