@@ -2775,7 +2775,7 @@
                 {
                     "address": "8.8.8.8",
                     "domains": [
-                        "full:CF.medicaltreatment.ir"
+                        "full:cf.medicaltreatment.ir"
                     ],
                     "skipFallback": true
                 }
@@ -2819,7 +2819,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "lung-disease.medicaltreatment.ir",
+                            "address": "cf.medicaltreatment.ir",
                             "port": 443,
                             "password": "ParsaJoonam",
                             "level": 8
