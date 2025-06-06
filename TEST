@@ -108,7 +108,7 @@
                 "Rayan - CF - C12 - 443"
             ],
             "url": "https://www.gstatic.com/generate_204",
-            "interval": "90s"
+            "interval": "30s"
         },
         {
             "tag": "Rayan - CF - C1 - 443",
@@ -623,7 +623,7 @@
         "server": "time.cloudflare.com",
         "server_port": 123,
         "domain_resolver": "dns-direct",
-        "interval": "10m",
+        "interval": "30m",
         "write_to_system": false
     },
     "experimental": {
