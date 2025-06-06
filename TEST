@@ -1,1 +1,379 @@
-
+{
+    "dns": {
+        "final": "local-dns",
+        "rules": [
+            {
+                "action": "route",
+                "clash_mode": "Global",
+                "server": "proxy-dns",
+                "source_ip_cidr": [
+                    "172.19.0.0/30",
+                    "fdfe:dcba:9876::1/126"
+                ]
+            },
+            {
+                "action": "route",
+                "server": "proxy-dns",
+                "source_ip_cidr": [
+                    "172.19.0.0/30",
+                    "fdfe:dcba:9876::1/126"
+                ]
+            },
+            {
+                "action": "route",
+                "clash_mode": "Direct",
+                "server": "direct-dns"
+            },
+            {
+                "action": "route",
+                "rule_set": [
+                    "geosite-ir"
+                ],
+                "server": "direct-dns"
+            }
+        ],
+        "servers": [
+            {
+                "address": "tcp://1.1.1.1",
+                "address_resolver": "local-dns",
+                "detour": "proxy",
+                "tag": "proxy-dns"
+            },
+            {
+                "address": "local",
+                "detour": "direct",
+                "tag": "local-dns"
+            },
+            {
+                "address": "local",
+                "detour": "direct",
+                "tag": "direct-dns"
+            }
+        ],
+        "strategy": "prefer_ipv4"
+    },
+    "inbounds": [
+        {
+            "address": [
+                "172.19.0.1/30",
+                "fdfe:dcba:9876::1/126"
+            ],
+            "auto_route": true,
+            "endpoint_independent_nat": false,
+            "mtu": 9000,
+            "platform": {
+                "http_proxy": {
+                    "enabled": true,
+                    "server": "127.0.0.1",
+                    "server_port": 2080
+                }
+            },
+            "stack": "system",
+            "strict_route": false,
+            "type": "tun"
+        },
+        {
+            "listen": "127.0.0.1",
+            "listen_port": 2080,
+            "type": "mixed",
+            "users": []
+        }
+    ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "proxy",
+      "outbounds": [
+        "auto",
+        "direct",
+        "Rayan - CF - C1 - 443",
+        "Rayan - CF - C2 - 443",
+        "Rayan - CF - C3 - 443",
+        "Rayan - CF - C4 - 443",
+        "Rayan - CF - C5 - 443",
+        "Rayan - CF - C6 - 443",
+        "Rayan - CF - C7 - 443",
+        "Rayan - CF - C8 - 443",
+        "Rayan - CF - C9 - 443",
+        "Rayan - CF - C10 - 443"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "Rayan - CF - C1 - 443",
+        "Rayan - CF - C2 - 443",
+        "Rayan - CF - C3 - 443",
+        "Rayan - CF - C4 - 443",
+        "Rayan - CF - C5 - 443",
+        "Rayan - CF - C6 - 443",
+        "Rayan - CF - C7 - 443",
+        "Rayan - CF - C8 - 443",
+        "Rayan - CF - C9 - 443",
+        "Rayan - CF - C10 - 443"
+      ],
+      "url": "http://cp.cloudflare.com/",
+      "interval": "3m0s",
+      "tolerance": 50
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C1 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C2 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C3 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C4 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C5 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C6 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C7 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C8 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C9 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C10 - 443",
+      "server": "rayan.sahel.us.kg",
+      "server_port": 443,
+      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan.sahel.us.kg"
+        }
+      }
+    }
+  ],
+    "route": {
+        "auto_detect_interface": true,
+        "final": "proxy",
+        "rule_set": [
+            {
+                "download_detour": "direct",
+                "format": "binary",
+                "tag": "geosite-ads",
+                "type": "remote",
+                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs"
+            },
+            {
+                "download_detour": "direct",
+                "format": "binary",
+                "tag": "geosite-private",
+                "type": "remote",
+                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs"
+            },
+            {
+                "download_detour": "direct",
+                "format": "binary",
+                "tag": "geosite-ir",
+                "type": "remote",
+                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ir.srs"
+            },
+            {
+                "download_detour": "direct",
+                "format": "binary",
+                "tag": "geoip-private",
+                "type": "remote",
+                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
+            },
+            {
+                "download_detour": "direct",
+                "format": "binary",
+                "tag": "geoip-ir",
+                "type": "remote",
+                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/ir.srs"
+            }
+        ],
+        "rules": [
+            {
+                "action": "sniff"
+            },
+            {
+                "action": "route",
+                "clash_mode": "Direct",
+                "outbound": "direct"
+            },
+            {
+                "action": "route",
+                "clash_mode": "Global",
+                "outbound": "proxy"
+            },
+            {
+                "action": "hijack-dns",
+                "protocol": "dns"
+            },
+            {
+                "action": "route",
+                "outbound": "direct",
+                "rule_set": [
+                    "geoip-private",
+                    "geosite-private",
+                    "geosite-ir",
+                    "geoip-ir"
+                ]
+            },
+            {
+                "action": "reject",
+                "rule_set": [
+                    "geosite-ads"
+                ]
+            }
+        ]
+    }
+}
