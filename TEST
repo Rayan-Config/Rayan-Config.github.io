@@ -1,417 +1,636 @@
 {
+    "log": {
+        "level": "warn",
+        "timestamp": true
+    },
     "dns": {
-        "final": "local-dns",
-        "rules": [
-            {
-                "action": "route",
-                "clash_mode": "Global",
-                "server": "proxy-dns",
-                "source_ip_cidr": [
-                    "172.19.0.0/30",
-                    "fdfe:dcba:9876::1/126"
-                ]
-            },
-            {
-                "action": "route",
-                "server": "proxy-dns",
-                "source_ip_cidr": [
-                    "172.19.0.0/30",
-                    "fdfe:dcba:9876::1/126"
-                ]
-            },
-            {
-                "action": "route",
-                "clash_mode": "Direct",
-                "server": "direct-dns"
-            },
-            {
-                "action": "route",
-                "rule_set": [
-                    "geosite-ir"
-                ],
-                "server": "direct-dns"
-            }
-        ],
         "servers": [
             {
-                "address": "tcp://1.1.1.1",
-                "address_resolver": "local-dns",
-                "detour": "proxy",
-                "tag": "proxy-dns"
+                "type": "https",
+                "server": "8.8.8.8",
+                "detour": "✅ Selector",
+                "tag": "dns-remote"
             },
             {
-                "address": "local",
-                "detour": "direct",
-                "tag": "local-dns"
-            },
-            {
-                "address": "local",
-                "detour": "direct",
-                "tag": "direct-dns"
+                "type": "udp",
+                "server": "8.8.8.8",
+                "server_port": 53,
+                "tag": "dns-direct"
             }
         ],
-        "strategy": "prefer_ipv4"
+        "rules": [
+            {
+                "domain": [
+                    "raw.githubusercontent.com"
+                ],
+                "server": "dns-direct"
+            },
+            {
+                "clash_mode": "Direct",
+                "server": "dns-direct"
+            },
+            {
+                "clash_mode": "Global",
+                "server": "dns-remote"
+            },
+            {
+                "rule_set": [
+                    "geosite-malware",
+                    "geosite-phishing",
+                    "geosite-cryptominers"
+                ],
+                "action": "reject"
+            }
+        ],
+        "strategy": "prefer_ipv4",
+        "independent_cache": true
     },
     "inbounds": [
         {
+            "type": "tun",
+            "tag": "tun-in",
             "address": [
-                "172.19.0.1/30",
+                "172.18.0.1/30",
                 "fdfe:dcba:9876::1/126"
             ],
-            "auto_route": true,
-            "endpoint_independent_nat": false,
             "mtu": 9000,
-            "platform": {
-                "http_proxy": {
-                    "enabled": true,
-                    "server": "127.0.0.1",
-                    "server_port": 2080
-                }
-            },
-            "stack": "system",
-            "strict_route": false,
-            "type": "tun"
+            "auto_route": true,
+            "strict_route": true,
+            "endpoint_independent_nat": true,
+            "stack": "mixed"
         },
         {
-            "listen": "127.0.0.1",
-            "listen_port": 2080,
             "type": "mixed",
-            "users": []
+            "tag": "mixed-in",
+            "listen": "0.0.0.0",
+            "listen_port": 2080
         }
     ],
-  "outbounds": [
-    {
-      "type": "selector",
-      "tag": "proxy",
-      "outbounds": [
-        "auto",
-        "direct",
-        "Rayan - CF - C1 - 443",
-        "Rayan - CF - C2 - 443",
-        "Rayan - CF - C3 - 443",
-        "Rayan - CF - C4 - 443",
-        "Rayan - CF - C5 - 443",
-        "Rayan - CF - C6 - 443",
-        "Rayan - CF - C7 - 443",
-        "Rayan - CF - C8 - 443",
-        "Rayan - CF - C9 - 443",
-        "Rayan - CF - C10 - 443",
-        "Rayan - CF - C11 - 443",
-        "Rayan - CF - C12 - 443"
-      ]
-    },
-    {
-      "type": "urltest",
-      "tag": "auto",
-      "outbounds": [
-        "Rayan - CF - C1 - 443",
-        "Rayan - CF - C2 - 443",
-        "Rayan - CF - C3 - 443",
-        "Rayan - CF - C4 - 443",
-        "Rayan - CF - C5 - 443",
-        "Rayan - CF - C6 - 443",
-        "Rayan - CF - C7 - 443",
-        "Rayan - CF - C8 - 443",
-        "Rayan - CF - C9 - 443",
-        "Rayan - CF - C10 - 443",
-        "Rayan - CF - C11 - 443",
-        "Rayan - CF - C12 - 443"
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m0s",
-      "tolerance": 50
-    },
-    {
-      "type": "direct",
-      "tag": "direct"
-    },
-    {
-      "type": "dns",
-      "tag": "dns-out"
-    },
-    {
-      "type": "block",
-      "tag": "block"
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C1 - 443",
-      "server": "rayan-nb-1.sanaz.dpdns.org",
-      "server_port": 443,
-      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-1.sanaz.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C2 - 443",
-      "server": "rayan-nb-2.sanaz.dpdns.org",
-      "server_port": 443,
-      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-2.sanaz.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C3 - 443",
-      "server": "rayan-nb-3.sanaz.dpdns.org",
-      "server_port": 443,
-      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-3.sanaz.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C4 - 443",
-      "server": "rayan-nb-4.sanaz.dpdns.org",
-      "server_port": 443,
-      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-4.sanaz.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C5 - 443",
-      "server": "rayan-nb-5.sanaz.dpdns.org",
-      "server_port": 443,
-      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-5.sanaz.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C6 - 443",
-      "server": "rayan-nb-6.sanaz.dpdns.org",
-      "server_port": 443,
-      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-6.sanaz.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C7 - 443",
-      "server": "rayan-nb-1.pejman.dpdns.org",
-      "server_port": 443,
-      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-1.pejman.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C8 - 443",
-      "server": "rayan-nb-2.pejman.dpdns.org",
-      "server_port": 443,
-      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-2.pejman.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C9 - 443",
-      "server": "rayan-nb-3.pejman.dpdns.org",
-      "server_port": 443,
-      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-3.pejman.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C10 - 443",
-      "server": "rayan-nb-4.pejman.dpdns.org",
-      "server_port": 443,
-      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-4.pejman.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C11 - 443",
-      "server": "rayan-nb-5.pejman.dpdns.org",
-      "server_port": 443,
-      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-5.pejman.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "Rayan - CF - C12 - 443",
-      "server": "rayan-nb-6.pejman.dpdns.org",
-      "server_port": 443,
-      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "host": "rayan-nb-6.pejman.dpdns.org"
-        }
-      }
-    }
-  ],
-    "route": {
-        "auto_detect_interface": true,
-        "final": "proxy",
-        "rule_set": [
-            {
-                "download_detour": "direct",
-                "format": "binary",
-                "tag": "geosite-ads",
-                "type": "remote",
-                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs"
+    "outbounds": [
+        {
+            "type": "selector",
+            "tag": "✅ Selector",
+            "outbounds": [
+                "💦 Best Ping 💥",
+                "💦 1 - VLESS - Domain : 443",
+                "💦 2 - VLESS - Domain : 443",
+                "💦 3 - VLESS - IPv4 : 443",
+                "💦 4 - VLESS - IPv4 : 443",
+                "💦 5 - VLESS - IPv6 : 443",
+                "💦 6 - VLESS - IPv6 : 443",
+                "💦 1 - Trojan - Domain : 443",
+                "💦 2 - Trojan - Domain : 443",
+                "💦 3 - Trojan - IPv4 : 443",
+                "💦 4 - Trojan - IPv4 : 443",
+                "💦 5 - Trojan - IPv6 : 443",
+                "💦 6 - Trojan - IPv6 : 443"
+            ]
+        },
+        {
+            "type": "direct",
+            "tag": "direct"
+        },
+        {
+            "type": "urltest",
+            "tag": "💦 Best Ping 💥",
+            "outbounds": [
+                "💦 1 - VLESS - Domain : 443",
+                "💦 2 - VLESS - Domain : 443",
+                "💦 3 - VLESS - IPv4 : 443",
+                "💦 4 - VLESS - IPv4 : 443",
+                "💦 5 - VLESS - IPv6 : 443",
+                "💦 6 - VLESS - IPv6 : 443",
+                "💦 1 - Trojan - Domain : 443",
+                "💦 2 - Trojan - Domain : 443",
+                "💦 3 - Trojan - IPv4 : 443",
+                "💦 4 - Trojan - IPv4 : 443",
+                "💦 5 - Trojan - IPv6 : 443",
+                "💦 6 - Trojan - IPv6 : 443"
+            ],
+            "url": "https://www.gstatic.com/generate_204",
+            "interval": "30s"
+        },
+        {
+            "tag": "💦 1 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "rayan-nb-1.sanaz.dpdns.org",
+            "server_port": 443,
+            "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
+            "network": "tcp",
+            "packet_encoding": "",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/wgBhDxF8m9ty1FO5",
+                "type": "ws"
             },
-            {
-                "download_detour": "direct",
-                "format": "binary",
-                "tag": "geosite-private",
-                "type": "remote",
-                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs"
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
             },
-            {
-                "download_detour": "direct",
-                "format": "binary",
-                "tag": "geosite-ir",
-                "type": "remote",
-                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ir.srs"
-            },
-            {
-                "download_detour": "direct",
-                "format": "binary",
-                "tag": "geoip-private",
-                "type": "remote",
-                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
-            },
-            {
-                "download_detour": "direct",
-                "format": "binary",
-                "tag": "geoip-ir",
-                "type": "remote",
-                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/ir.srs"
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "RaYAn-Nb-1.SAnaZ.DpdNs.oRg",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
             }
-        ],
+        },
+        {
+            "tag": "💦 2 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
+            "network": "tcp",
+            "packet_encoding": "",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/GBjITx61lr10uGSw",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "RAYAN-nb-1.SanaZ.DPdnS.OrG",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 3 - VLESS - IPv4 : 443",
+            "type": "vless",
+            "server": "172.67.186.206",
+            "server_port": 443,
+            "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
+            "network": "tcp",
+            "packet_encoding": "",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/Se7TOzYGCPHBjYsH",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "rAyAN-Nb-1.SAnAZ.DpdNS.ORG",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 4 - VLESS - IPv4 : 443",
+            "type": "vless",
+            "server": "104.21.92.52",
+            "server_port": 443,
+            "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
+            "network": "tcp",
+            "packet_encoding": "",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/PAyihRekmh2L42V3",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "RAyaN-Nb-1.SAnaZ.DpdNS.org",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 5 - VLESS - IPv6 : 443",
+            "type": "vless",
+            "server": "[2606:4700:3037::6815:5c34]",
+            "server_port": 443,
+            "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
+            "network": "tcp",
+            "packet_encoding": "",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/qiCar0akAB06yWxg",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "RAYAN-Nb-1.sAnaz.DpdnS.Org",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 6 - VLESS - IPv6 : 443",
+            "type": "vless",
+            "server": "[2606:4700:3030::ac43:bace]",
+            "server_port": 443,
+            "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
+            "network": "tcp",
+            "packet_encoding": "",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/iCg12pKQfUjwwdUj",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "rAYAn-Nb-1.saNaZ.DpdNS.oRG",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 1 - Trojan - Domain : 443",
+            "type": "trojan",
+            "password": "ParsaJoonam",
+            "server": "rayan-nb-1.sanaz.dpdns.org",
+            "server_port": 443,
+            "network": "tcp",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/tr1NO50mtu0c6Heqzo",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "rayAn-nb-1.sAnAZ.DPdNs.org",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 2 - Trojan - Domain : 443",
+            "type": "trojan",
+            "password": "ParsaJoonam",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "network": "tcp",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/trPsmihwsyZwtcSenk",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "rAYAn-NB-1.SANAz.DpDNs.Org",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 3 - Trojan - IPv4 : 443",
+            "type": "trojan",
+            "password": "ParsaJoonam",
+            "server": "172.67.186.206",
+            "server_port": 443,
+            "network": "tcp",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/triU45TDhRvCZ1OAyd",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "RAYan-nb-1.sANaz.DPDnS.ORG",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 4 - Trojan - IPv4 : 443",
+            "type": "trojan",
+            "password": "ParsaJoonam",
+            "server": "104.21.92.52",
+            "server_port": 443,
+            "network": "tcp",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/tr2vNZaxfXuvUzvSDB",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "rAYan-nb-1.SaNAz.DPdnS.ORg",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 5 - Trojan - IPv6 : 443",
+            "type": "trojan",
+            "password": "ParsaJoonam",
+            "server": "[2606:4700:3037::6815:5c34]",
+            "server_port": 443,
+            "network": "tcp",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/trjD73nrdGcRayVXel",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "rayAn-NB-1.sanAz.DPdNs.orG",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        },
+        {
+            "tag": "💦 6 - Trojan - IPv6 : 443",
+            "type": "trojan",
+            "password": "ParsaJoonam",
+            "server": "[2606:4700:3030::ac43:bace]",
+            "server_port": 443,
+            "network": "tcp",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-nb-1.sanaz.dpdns.org"
+                },
+                "path": "/trkyR3oNMHN72EcqSj",
+                "type": "ws"
+            },
+            "domain_resolver": {
+                "server": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "rewrite_ttl": 60
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "RaYAN-nB-1.SAnAZ.dpdNS.oRg",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                }
+            }
+        }
+    ],
+    "route": {
         "rules": [
             {
                 "action": "sniff"
             },
             {
-                "action": "route",
+                "action": "hijack-dns",
+                "mode": "or",
+                "rules": [
+                    {
+                        "port": 53
+                    },
+                    {
+                        "protocol": "dns"
+                    }
+                ],
+                "type": "logical"
+            },
+            {
                 "clash_mode": "Direct",
                 "outbound": "direct"
             },
             {
-                "action": "route",
                 "clash_mode": "Global",
-                "outbound": "proxy"
+                "outbound": "✅ Selector"
             },
             {
-                "action": "hijack-dns",
-                "protocol": "dns"
+                "network": "udp",
+                "action": "reject"
             },
             {
-                "action": "route",
-                "outbound": "direct",
                 "rule_set": [
-                    "geoip-private",
-                    "geosite-private",
-                    "geosite-ir",
-                    "geoip-ir"
-                ]
+                    "geosite-malware",
+                    "geosite-phishing",
+                    "geosite-cryptominers"
+                ],
+                "action": "reject"
             },
             {
-                "action": "reject",
                 "rule_set": [
-                    "geosite-ads"
-                ]
+                    "geoip-malware",
+                    "geoip-phishing"
+                ],
+                "action": "reject"
             }
-        ]
+        ],
+        "rule_set": [
+            {
+                "type": "remote",
+                "tag": "geosite-malware",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-malware",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-phishing",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-phishing",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-cryptominers",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs",
+                "download_detour": "direct"
+            }
+        ],
+        "auto_detect_interface": true,
+        "override_android_vpn": true,
+        "final": "✅ Selector"
+    },
+    "ntp": {
+        "enabled": true,
+        "server": "time.cloudflare.com",
+        "server_port": 123,
+        "domain_resolver": "dns-direct",
+        "interval": "30m",
+        "write_to_system": false
+    },
+    "experimental": {
+        "cache_file": {
+            "enabled": true,
+            "store_fakeip": true
+        },
+        "clash_api": {
+            "external_controller": "127.0.0.1:9090",
+            "external_ui": "ui",
+            "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+            "external_ui_download_detour": "direct",
+            "default_mode": "Rule"
+        }
     }
 }
