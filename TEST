@@ -95,7 +95,9 @@
         "Rayan - CF - C7 - 443",
         "Rayan - CF - C8 - 443",
         "Rayan - CF - C9 - 443",
-        "Rayan - CF - C10 - 443"
+        "Rayan - CF - C10 - 443",
+        "Rayan - CF - C11 - 443",
+        "Rayan - CF - C12 - 443"
       ]
     },
     {
@@ -111,9 +113,11 @@
         "Rayan - CF - C7 - 443",
         "Rayan - CF - C8 - 443",
         "Rayan - CF - C9 - 443",
-        "Rayan - CF - C10 - 443"
+        "Rayan - CF - C10 - 443",
+        "Rayan - CF - C11 - 443",
+        "Rayan - CF - C12 - 443"
       ],
-      "url": "http://cp.cloudflare.com/",
+      "url": "http://www.gstatic.com/generate_204",
       "interval": "3m0s",
       "tolerance": 50
     },
@@ -132,9 +136,9 @@
     {
       "type": "vless",
       "tag": "Rayan - CF - C1 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-1.sanaz.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
       "tls": {
         "enabled": true
       },
@@ -142,16 +146,16 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-1.sanaz.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C2 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-2.sanaz.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
       "tls": {
         "enabled": true
       },
@@ -159,16 +163,16 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-2.sanaz.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C3 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-3.sanaz.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
       "tls": {
         "enabled": true
       },
@@ -176,16 +180,16 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-3.sanaz.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C4 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-4.sanaz.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
       "tls": {
         "enabled": true
       },
@@ -193,16 +197,16 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-4.sanaz.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C5 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-5.sanaz.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
       "tls": {
         "enabled": true
       },
@@ -210,16 +214,16 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-5.sanaz.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C6 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-6.sanaz.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "58621af7-5668-41bf-8ae8-8fff583cf08f",
       "tls": {
         "enabled": true
       },
@@ -227,16 +231,16 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-6.sanaz.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C7 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-1.pejman.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
       "tls": {
         "enabled": true
       },
@@ -244,16 +248,16 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-1.pejman.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C8 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-2.pejman.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
       "tls": {
         "enabled": true
       },
@@ -261,16 +265,16 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-2.pejman.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C9 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-3.pejman.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
       "tls": {
         "enabled": true
       },
@@ -278,16 +282,16 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-3.pejman.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "Rayan - CF - C10 - 443",
-      "server": "rayan.sahel.us.kg",
+      "server": "rayan-nb-4.pejman.dpdns.org",
       "server_port": 443,
-      "uuid": "f2004126-5865-4980-b6dd-2211dbaadf10",
+      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
       "tls": {
         "enabled": true
       },
@@ -295,7 +299,41 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "host": "rayan.sahel.us.kg"
+          "host": "rayan-nb-4.pejman.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C11 - 443",
+      "server": "rayan-nb-5.pejman.dpdns.org",
+      "server_port": 443,
+      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan-nb-5.pejman.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Rayan - CF - C12 - 443",
+      "server": "rayan-nb-6.pejman.dpdns.org",
+      "server_port": 443,
+      "uuid": "c13995b8-8a42-4264-b105-9377765de000",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "rayan-nb-6.pejman.dpdns.org"
         }
       }
     }
