@@ -34,6 +34,20 @@
                 "server": "dns-remote"
             },
             {
+                "type": "logical",
+                "mode": "and",
+                "rules": [
+                    {
+                        "rule_set": "geosite-ir"
+                    },
+                    {
+                        "rule_set": "geoip-ir"
+                    }
+                ],
+                "action": "route",
+                "server": "dns-direct"
+            },
+            {
                 "rule_set": [
                     "geosite-malware",
                     "geosite-phishing",
@@ -575,6 +589,20 @@
                     "geoip-phishing"
                 ],
                 "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "geosite-ir"
+                ],
+                "action": "route",
+                "outbound": "direct"
+            },
+            {
+                "rule_set": [
+                    "geoip-ir"
+                ],
+                "action": "route",
+                "outbound": "direct"
             }
         ],
         "rule_set": [
@@ -612,10 +640,23 @@
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs",
                 "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-ir",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-ir",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs",
+                "download_detour": "direct"
             }
         ],
         "auto_detect_interface": true,
-        "override_android_vpn": true,
         "final": "👑 @Rayan_Config 👑"
     },
     "ntp": {
