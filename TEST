@@ -102,7 +102,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -224,7 +224,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "www.speedtest.net",
             "port": 443,
             "users": [
               {
@@ -273,7 +273,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -395,7 +395,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "iplocation.net",
             "port": 443,
             "users": [
               {
@@ -444,7 +444,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -566,7 +566,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "digitalocean.com",
             "port": 443,
             "users": [
               {
@@ -615,7 +615,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -737,7 +737,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "sourceforge.net",
             "port": 443,
             "users": [
               {
@@ -786,7 +786,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -908,7 +908,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "check-host.net",
             "port": 443,
             "users": [
               {
@@ -957,7 +957,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -1079,7 +1079,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "jquery.com",
             "port": 443,
             "users": [
               {
@@ -1128,7 +1128,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -1250,7 +1250,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "homestead.com",
             "port": 443,
             "users": [
               {
@@ -1299,7 +1299,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -1421,7 +1421,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "digg.com",
             "port": 443,
             "users": [
               {
@@ -1470,7 +1470,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -1592,7 +1592,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "fonts.net",
             "port": 443,
             "users": [
               {
@@ -1641,7 +1641,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -1763,7 +1763,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "cdnjs.com",
             "port": 443,
             "users": [
               {
@@ -1812,7 +1812,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -1983,7 +1983,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "8-12",
+          "length": "6-8",
           "interval": "1-2"
         }
       },
@@ -7821,8 +7821,8 @@
                         "http",
                         "tls"
                     ],
-                    "enabled": true,
-                    "routeOnly": true
+                    "enabled": false,
+                    "routeOnly": false
                 },
                 "tag": "socks-in"
             },
@@ -8047,8 +8047,8 @@
                         "http",
                         "tls"
                     ],
-                    "enabled": true,
-                    "routeOnly": true
+                    "enabled": false,
+                    "routeOnly": false
                 },
                 "tag": "socks-in"
             },
@@ -8273,8 +8273,8 @@
                         "http",
                         "tls"
                     ],
-                    "enabled": true,
-                    "routeOnly": true
+                    "enabled": false,
+                    "routeOnly": false
                 },
                 "tag": "socks-in"
             },
@@ -8499,8 +8499,8 @@
                         "http",
                         "tls"
                     ],
-                    "enabled": true,
-                    "routeOnly": true
+                    "enabled": false,
+                    "routeOnly": false
                 },
                 "tag": "socks-in"
             },
