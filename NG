@@ -53,7 +53,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "www.speedtest.net",
             "port": 443,
             "users": [
               {
@@ -1421,7 +1421,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "digg.com",
+            "address": "www.speedtest.net",
             "port": 443,
             "users": [
               {
@@ -1934,7 +1934,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "www.speedtest.net",
             "port": 443,
             "users": [
               {
@@ -2281,7 +2281,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "www.speedtest.net",
             "port": 443,
             "users": [
               {
@@ -2433,7 +2433,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "digg.com",
+            "address": "www.speedtest.net",
             "port": 443,
             "users": [
               {
@@ -2828,7 +2828,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "www.speedtest.net",
             "port": 443,
             "users": [
               {
@@ -7173,7 +7173,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
+            "address": "www.speedtest.net",
             "port": 443,
             "users": [
               {
@@ -7453,7 +7453,7 @@
                 {
                     "address": "8.8.8.8",
                     "domains": [
-                        "full:zula.ir"
+                        "full:www.speedtest.net"
                     ],
                     "skipFallback": true
                 },
@@ -7507,7 +7507,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "zula.ir",
+                            "address": "www.speedtest.net",
                             "port": 443,
                             "password": "t.me/Rayan_Config",
                             "level": 8
@@ -8433,7 +8433,7 @@
                 {
                     "address": "8.8.8.8",
                     "domains": [
-                        "full:zula.ir"
+                        "full:www.speedtest.net"
                     ],
                     "skipFallback": true
                 },
@@ -8487,7 +8487,7 @@
                 "settings": {
                     "vnext": [
                         {
-                            "address": "zula.ir",
+                            "address": "www.speedtest.net",
                             "port": 443,
                             "users": [
                                 {
