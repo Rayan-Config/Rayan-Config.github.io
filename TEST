@@ -9320,7 +9320,6 @@
         "stats": {}
     },
 {
-  "remarks": "🍁 Rayan - Google Only 🔥",
   "dns": {
     "queryStrategy": "UseIPv4",
     "hosts": {
@@ -9406,7 +9405,7 @@
       }
     }
   ],
-  "remarks": "Google Services",
+  "remarks": "🍁 Rayan - Google Services 🔥",
   "routing": {
     "domainStrategy": "IPIfNonMatch",
     "rules": [
