@@ -2735,6 +2735,24 @@
           "skipFallback": true
         },
         {
+          "address": "78.157.42.101",
+          "domains": [
+            "geosite:openai",
+            "geosite:microsoft",
+            "geosite:oracle",
+            "geosite:docker",
+            "geosite:adobe",
+            "geosite:epicgames",
+            "geosite:intel",
+            "geosite:amd",
+            "geosite:nvidia",
+            "geosite:asus",
+            "geosite:hp",
+            "geosite:lenovo"
+          ],
+          "skipFallback": true
+        },
+        {
           "address": "8.8.8.8",
           "domains": [
             "full:iplocation.net",
