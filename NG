@@ -2798,7 +2798,7 @@
           "http",
           "tls"
         ],
-        "enabled": true,
+        "enabled": false,
         "routeOnly": false
       },
       "tag": "socks"
@@ -3588,7 +3588,7 @@
           "http",
           "tls"
         ],
-        "enabled": true,
+        "enabled": false,
         "routeOnly": false
       },
       "tag": "socks"
@@ -3983,7 +3983,7 @@
           "http",
           "tls"
         ],
-        "enabled": true,
+        "enabled": false,
         "routeOnly": false
       },
       "tag": "socks"
@@ -5168,7 +5168,7 @@
           "http",
           "tls"
         ],
-        "enabled": true,
+        "enabled": false,
         "routeOnly": false
       },
       "tag": "socks"
@@ -5563,7 +5563,7 @@
           "http",
           "tls"
         ],
-        "enabled": true,
+        "enabled": false,
         "routeOnly": false
       },
       "tag": "socks"
@@ -6748,7 +6748,7 @@
           "http",
           "tls"
         ],
-        "enabled": true,
+        "enabled": false,
         "routeOnly": false
       },
       "tag": "socks"
@@ -7143,7 +7143,7 @@
           "http",
           "tls"
         ],
-        "enabled": true,
+        "enabled": false,
         "routeOnly": false
       },
       "tag": "socks"
@@ -7485,7 +7485,7 @@
                         "http",
                         "tls"
                     ],
-                    "enabled": true,
+                    "enabled": false,
                     "routeOnly": true
                 },
                 "tag": "socks-in"
@@ -7862,7 +7862,7 @@
                         "http",
                         "tls"
                     ],
-                    "enabled": true,
+                    "enabled": false,
                     "routeOnly": true
                 },
                 "tag": "socks-in"
