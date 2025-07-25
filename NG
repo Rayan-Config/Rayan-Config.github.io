@@ -2153,7 +2153,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2229,7 +2229,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2267,7 +2267,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2343,7 +2343,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2419,7 +2419,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2495,7 +2495,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2571,7 +2571,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2871,7 +2871,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2947,7 +2947,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -3023,7 +3023,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -3099,7 +3099,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -3175,7 +3175,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -3251,7 +3251,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -8284,8 +8284,8 @@
             "path": "/trKOJugAtxuZbx43Xb?ed=2560"
           },
           "tlsSettings": {
-            "allowInsecure": false,
-            "fingerprint": "randomized",
+            "allowInsecure": true,
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -8476,8 +8476,8 @@
             "path": "/trTwxdeMGnthjCjiD6?ed=2560"
           },
           "tlsSettings": {
-            "allowInsecure": false,
-            "fingerprint": "randomized",
+            "allowInsecure": true,
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -9044,7 +9044,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -9270,7 +9270,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -9496,7 +9496,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -9722,7 +9722,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -9948,7 +9948,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
