@@ -51,3 +51,7 @@ vless://4fd1660f-273e-4b4a-a51e-de26bd541347@51.195.101.222:443?security=tls&sni
 vless://e587638b-f49a-4ac4-8fea-22c3252bd2f8@167.172.89.10:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/ws&host=167.172.89.10&encryption=none#Rayan%20-%20RVP%20-%20SG%20-%20I%20-%20%F0%9F%9F%A3%20t.me/Rayan_Config
 vless://50ee5ef2-74ee-4e97-9e7c-a10d212d1293@157.230.91.47:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/ws&host=157.230.91.47&encryption=none#Rayan%20-%20RVP%20-%20US%20-%20I%20-%20%F0%9F%9F%A3%20t.me/Rayan_Config
 vless://e72bb322-00dc-4206-95bc-b9e9f041c905@57.128.219.105:443?security=tls&sni=zula.ir&allowInsecure=1&fp=chrome&type=ws&path=/ws&host=57.128.219.105&encryption=none#Rayan%20-%20RVP%20-%20PL%20-%20I%20-%20%F0%9F%9F%A3%20t.me/Rayan_Config
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1MXlsb1FDOEQ5dzFXYWU3Rkh0STY1@4.223.106.151:48172#Ainita-Server-1
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1MXlsb1FDOEQ5dzFXYWU3Rkh0STY1@135.225.124.80:48172#Ainita-Server-2
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1MXlsb1FDOEQ5dzFXYWU3Rkh0STY1@4.223.100.248:48172#Ainita-Server-3
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1MXlsb1FDOEQ5dzFXYWU3Rkh0STY1@20.91.252.21:48172#Ainita-Server-4
