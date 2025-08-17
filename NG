@@ -1250,7 +1250,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "homestead.com",
+              "address": "medium.com",
               "port": 443,
               "users": [
                 {
@@ -1592,7 +1592,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "fonts.net",
+              "address": "change.org",
               "port": 443,
               "users": [
                 {
@@ -2081,9 +2081,9 @@
             "full:zula.ir",
             "full:check-host.net",
             "full:jquery.com",
-            "full:homestead.com",
+            "full:mybb.com",
             "full:digg.com",
-            "full:fonts.net",
+            "full:www.visaeurope.ch",
             "full:cdnjs.com",
             "full:www.speedtest.net"
           ],
@@ -2167,11 +2167,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "digitalocean.com",
+              "address": "www.speedtest.net",
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "1ef3aaa1-59f9-4944-bade-8e734336b40e",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2186,16 +2186,16 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-2.sanam.dpdns.org",
+            "host": "rayan-confic-ng-01.rayan-v.dns-dynamic.net",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-2.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiC-Ng-01.RaYaN-V.DnS-DyNaMiC.NeT"
           }
         },
         "tag": "prox-2"
@@ -2305,7 +2305,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2381,7 +2381,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2395,11 +2395,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "homestead.com",
+              "address": "mybb.com",
               "port": 443,
               "users": [
                 {
-                  "id": "eaa140af-47da-4201-a1e2-004833106835",
+                  "id": "121d806e-071a-4a6d-b763-de29bc4c1311",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2414,7 +2414,7 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-2.saman.dpdns.org",
+            "host": "rayan-confic-ng-02.rayan-vi.dns-dynamic.net",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
@@ -2423,7 +2423,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-2.SaMaN.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiC-Ng-02.RaYaN-Vi.dNs-dYnAmIc.nEt"
           }
         },
         "tag": "prox-8"
@@ -2457,7 +2457,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2471,7 +2471,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "fonts.net",
+              "address": "www.visaeurope.ch",
               "port": 443,
               "users": [
                 {
@@ -2533,7 +2533,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2761,9 +2761,9 @@
             "full:zula.ir",
             "full:check-host.net",
             "full:jquery.com",
-            "full:homestead.com",
+            "full:adf.ly",
             "full:digg.com",
-            "full:fonts.net",
+            "full:www.visasoutheasteurope.com",
             "full:cdnjs.com",
             "full:www.speedtest.net"
           ],
@@ -2833,7 +2833,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -2889,7 +2889,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "1ef3aaa1-59f9-4944-bade-8e734336b40e",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2904,16 +2904,16 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-3.sanam.dpdns.org",
+            "host": "rayan-confic-ng-01.rayan-v.dns-dynamic.net",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-3.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiC-Ng-01.RaYaN-V.DnS-DyNaMiC.NeT"
           }
         },
         "tag": "prox-3"
@@ -2985,7 +2985,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -3061,7 +3061,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -3075,7 +3075,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "homestead.com",
+              "address": "adf.ly",
               "port": 443,
               "users": [
                 {
@@ -3137,7 +3137,7 @@
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -3151,7 +3151,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "fonts.net",
+              "address": "www.visasoutheasteurope.com",
               "port": 443,
               "users": [
                 {
@@ -3189,11 +3189,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "cdnjs.com",
+              "address": "www.speedtest.net",
               "port": 443,
               "users": [
                 {
-                  "id": "eaa140af-47da-4201-a1e2-004833106835",
+                  "id": "121d806e-071a-4a6d-b763-de29bc4c1311",
                   "encryption": "none",
                   "level": 8
                 }
@@ -3208,16 +3208,16 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-5.saman.dpdns.org",
+            "host": "rayan-confic-ng-02.rayan-vi.dns-dynamic.net",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
             "allowInsecure": true,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-5.SaMaN.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiC-Ng-02.RaYaN-Vi.dNs-dYnAmIc.nEt"
           }
         },
         "tag": "prox-11"
@@ -3936,7 +3936,7 @@
                 {
                   "encryption": "none",
                   "flow": "",
-                  "id": "eaa140af-47da-4201-a1e2-004833106835",
+                  "id": "121d806e-071a-4a6d-b763-de29bc4c1311",
                   "level": 8,
                   "security": "auto"
                 }
@@ -3956,14 +3956,14 @@
             ],
             "fingerprint": "chrome",
             "publicKey": "",
-            "serverName": "r1.SaMaN.DpDnS.OrG",
+            "serverName": "rAyAn-cOnFiC-Ng-02.RaYaN-Vi.dNs-dYnAmIc.nEt",
             "shortId": "",
             "show": false,
             "spiderX": ""
           },
           "wsSettings": {
             "headers": {
-              "Host": "r1.SaMaN.DpDnS.OrG"
+              "Host": "rAyAn-cOnFiC-Ng-02.RaYaN-Vi.dNs-dYnAmIc.nEt"
             },
             "path": "/?ed=2560"
           }
@@ -4330,13 +4330,13 @@
         "settings": {
           "vnext": [
             {
-              "address": "sourceforge.net",
+              "address": "www.speedtest.net",
               "port": 443,
               "users": [
                 {
                   "encryption": "none",
                   "flow": "",
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "1ef3aaa1-59f9-4944-bade-8e734336b40e",
                   "level": 8,
                   "security": "auto"
                 }
@@ -4356,14 +4356,14 @@
             ],
             "fingerprint": "chrome",
             "publicKey": "",
-            "serverName": "r2.SaNaM.DpDnS.OrG",
+            "serverName": "rAyAn-cOnFiC-Ng-01.RaYaN-V.DnS-DyNaMiC.NeT",
             "shortId": "",
             "show": false,
             "spiderX": ""
           },
           "wsSettings": {
             "headers": {
-              "Host": "r2.SaNaM.DpDnS.OrG"
+              "Host": "rAyAn-cOnFiC-Ng-01.RaYaN-V.DnS-DyNaMiC.NeT"
             },
             "path": "/?ed=2560"
           }
@@ -6330,7 +6330,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "fonts.net",
+              "address": "bitpay.com",
               "port": 443,
               "users": [
                 {
@@ -6730,7 +6730,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "fonts.net",
+              "address": "www.visa.com.br",
               "port": 443,
               "users": [
                 {
@@ -8414,7 +8414,7 @@
         {
           "address": "8.8.8.8",
           "domains": [
-            "full:fonts.net"
+            "full:feedly.com"
           ],
           "skipFallback": true
         }
@@ -8458,7 +8458,7 @@
         "settings": {
           "servers": [
             {
-              "address": "fonts.net",
+              "address": "feedly.com",
               "port": 443,
               "password": "t.me/Rayan_Config",
               "level": 8
@@ -8662,7 +8662,7 @@
           },
           "tlsSettings": {
             "allowInsecure": false,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -8854,7 +8854,7 @@
           },
           "tlsSettings": {
             "allowInsecure": false,
-            "fingerprint": "randomized",
+            "fingerprint": "chrome",
             "alpn": [
               "http/1.1"
             ],
@@ -9418,7 +9418,7 @@
         {
           "address": "8.8.8.8",
           "domains": [
-            "full:fonts.net"
+            "full:1password.com"
           ],
           "skipFallback": true
         },
@@ -9472,7 +9472,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "fonts.net",
+              "address": "1password.com",
               "port": 443,
               "users": [
                 {
