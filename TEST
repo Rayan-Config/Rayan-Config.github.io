@@ -1,644 +1,368 @@
 {
-  "remarks": "🪴 1 - BPB LB - GC CDN 🔥",
-  "log": {
-    "loglevel": "warning"
-  },
-  "dns": {
-    "servers": [
-      {
-        "address": "https://8.8.8.8/dns-query",
-        "tag": "remote-dns"
-      },
-      {
-        "address": "8.8.8.8",
-        "domains": [
-          "geosite:category-ir"
+    "log": {
+        "level": "warn",
+        "timestamp": true
+    },
+    "dns": {
+        "servers": [
+            {
+                "type": "https",
+                "server": "8.8.8.8",
+                "detour": "✅ Selector",
+                "tag": "dns-remote"
+            },
+            {
+                "type": "udp",
+                "server": "8.8.8.8",
+                "server_port": 53,
+                "tag": "dns-direct"
+            }
         ],
-        "expectIPs": [
-          "geoip:ir"
+        "rules": [
+            {
+                "domain": [
+                    "raw.githubusercontent.com"
+                ],
+                "server": "dns-direct"
+            },
+            {
+                "clash_mode": "Direct",
+                "server": "dns-direct"
+            },
+            {
+                "clash_mode": "Global",
+                "server": "dns-remote"
+            },
+            {
+                "type": "logical",
+                "mode": "and",
+                "rules": [
+                    {
+                        "rule_set": "geosite-ir"
+                    },
+                    {
+                        "rule_set": "geoip-ir"
+                    }
+                ],
+                "action": "route",
+                "server": "dns-direct"
+            },
+            {
+                "rule_set": [
+                    "geosite-malware",
+                    "geosite-phishing",
+                    "geosite-cryptominers"
+                ],
+                "action": "reject"
+            }
         ],
-        "skipFallback": true
-      },
-      {
-        "address": "8.8.8.8",
-        "domains": [
-          "full:iplocation.net",
-          "full:digitalocean.com",
-          "full:sourceforge.net",
-          "full:zula.ir",
-          "full:check-host.net",
-          "full:jquery.com",
-          "full:homestead.com",
-          "full:digg.com",
-          "full:fonts.net",
-          "full:cdnjs.com",
-          "full:www.speedtest.net"
-        ],
-        "skipFallback": true
-      }
+        "strategy": "ipv4_only",
+        "independent_cache": true
+    },
+    "inbounds": [
+        {
+            "type": "tun",
+            "tag": "tun-in",
+            "address": [
+                "172.18.0.1/30"
+            ],
+            "mtu": 9000,
+            "auto_route": true,
+            "strict_route": true,
+            "endpoint_independent_nat": true,
+            "stack": "mixed"
+        },
+        {
+            "type": "mixed",
+            "tag": "mixed-in",
+            "listen": "0.0.0.0",
+            "listen_port": 2080
+        }
     ],
-    "queryStrategy": "UseIP",
-    "tag": "dns"
-  },
-  "inbounds": [
-    {
-      "port": 10808,
-      "protocol": "socks",
-      "settings": {
-        "auth": "noauth",
-        "udp": true,
-        "userLevel": 8
-      },
-      "sniffing": {
-        "destOverride": [
-          "http",
-          "tls"
-        ],
-        "enabled": false,
-        "routeOnly": false
-      },
-      "tag": "socks-in"
-    },
-    {
-      "port": 10853,
-      "protocol": "dokodemo-door",
-      "settings": {
-        "address": "1.1.1.1",
-        "network": "tcp,udp",
-        "port": 53
-      },
-      "tag": "dns-in"
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.38.170.6",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
+    "outbounds": [
+        {
+            "type": "selector",
+            "tag": "✅ Selector",
+            "outbounds": [
+                "💦 Best Ping 💥",
+                "💦 1 - VLESS - Domain : 443",
+                "💦 2 - VLESS - Domain : 443",
+                "💦 1 - Trojan - Domain : 443",
+                "💦 2 - Trojan - Domain : 443"
             ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
         },
-        "wsSettings": {
-          "host": "bb-mhi-gc.medicalhistory.ir",
-          "path": "/pyip=us-2.eu-ii.msnegar.eu.org"
+        {
+            "type": "direct",
+            "tag": "direct"
         },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
+        {
+            "type": "urltest",
+            "tag": "💦 Best Ping 💥",
+            "outbounds": [
+                "💦 1 - VLESS - Domain : 443",
+                "💦 2 - VLESS - Domain : 443",
+                "💦 1 - Trojan - Domain : 443",
+                "💦 2 - Trojan - Domain : 443"
+            ],
+            "url": "https://www.gstatic.com/generate_204",
+            "interval": "30s"
+        },
+        {
+            "tag": "💦 1 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "rayan-confic-ng-01.rayan-v.dns-dynamic.net",
+            "server_port": 443,
+            "uuid": "1ef3aaa1-59f9-4944-bade-8e734336b40e",
+            "network": "tcp",
+            "packet_encoding": "",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-confic-ng-01.rayan-v.dns-dynamic.net"
+                },
+                "path": "/nKG2ChCmjIcZYmkM",
+                "type": "ws"
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "RAyaN-CONFIc-ng-01.rayAn-v.Dns-DYnAMic.NeT",
+                "record_fragment": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "💦 2 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "1ef3aaa1-59f9-4944-bade-8e734336b40e",
+            "network": "tcp",
+            "packet_encoding": "",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-confic-ng-01.rayan-v.dns-dynamic.net"
+                },
+                "path": "/6DumgB2IUegTAVig",
+                "type": "ws"
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "rayAN-CoNFiC-ng-01.RaYaN-v.DNS-DYNAMiC.neT",
+                "record_fragment": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "💦 1 - Trojan - Domain : 443",
+            "type": "trojan",
+            "password": "ParsaJoonam",
+            "server": "rayan-confic-ng-01.rayan-v.dns-dynamic.net",
+            "server_port": 443,
+            "network": "tcp",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-confic-ng-01.rayan-v.dns-dynamic.net"
+                },
+                "path": "/trucVVeCAVNRQtSDwa",
+                "type": "ws"
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "RayAn-COnfiC-Ng-01.raYaN-V.dnS-DYNamiC.net",
+                "record_fragment": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "💦 2 - Trojan - Domain : 443",
+            "type": "trojan",
+            "password": "ParsaJoonam",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "network": "tcp",
+            "transport": {
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "max_early_data": 2560,
+                "headers": {
+                    "Host": "rayan-confic-ng-01.rayan-v.dns-dynamic.net"
+                },
+                "path": "/trOQuqsXIKRnnAfvmi",
+                "type": "ws"
+            },
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "tls": {
+                "alpn": "http/1.1",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "RayAN-CoNfic-Ng-01.RAYaN-V.dns-DyNAmIC.net",
+                "record_fragment": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         }
-      },
-      "tag": "prox-1"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.223.76.20",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "bb-mhi-gc.medicalhistory.ir",
-          "path": "/pyip=us-1.eu-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-2"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.223.120.146",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "bb-mhi-gc.medicalhistory.ir",
-          "path": "/pyip=eu-4.eu-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-3"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "93.123.17.151",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "mdr-gc.msnegar.eu.org",
-          "path": "/pyip=eu-3.eu-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-4"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "81.28.12.12",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "mdr-gc.msnegar.eu.org",
-          "path": "/pyip=eu-2.eu-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-5"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.38.170.6",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "mdr-gc.msnegar.eu.org",
-          "path": "/pyip=eu-1.eu-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-6"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.223.76.20",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "bb-mtr-gc.medicaltreatment.ir",
-          "path": "/pyip=us-2.mix-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-7"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.223.120.146",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "bb-mtr-gc.medicaltreatment.ir",
-          "path": "/pyip=us-1.mix-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-8"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "93.123.17.151",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "bb-mtr-gc.medicaltreatment.ir",
-          "path": "/pyip=eu-4.mix-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-9"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "81.28.12.12",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "msn-gc.msnegar.eu.org",
-          "path": "/pyip=eu-3.mix-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-10"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "81.28.12.12",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "msn-gc.msnegar.eu.org",
-          "path": "/pyip=eu-2.mix-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-11"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "81.28.12.12",
-            "port": 443,
-            "users": [
-              {
-                "id": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "wsSettings": {
-          "host": "msn-gc.msnegar.eu.org",
-          "path": "/pyip=eu-1.mix-ii.msnegar.eu.org"
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ],
-          "serverName": "gCoRe.cOm"
-        }
-      },
-      "tag": "prox-12"
-    },
-    {
-      "protocol": "dns",
-      "tag": "dns-out"
-    },
-    {
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "UseIP"
-      },
-      "tag": "direct"
-    },
-    {
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      },
-      "tag": "block"
-    }
-  ],
-  "policy": {
-    "levels": {
-      "8": {
-        "connIdle": 300,
-        "downlinkOnly": 1,
-        "handshake": 4,
-        "uplinkOnly": 1
-      }
-    },
-    "system": {
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
-    }
-  },
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      {
-        "inboundTag": [
-          "dns-in"
-        ],
-        "outboundTag": "dns-out",
-        "type": "field"
-      },
-      {
-        "inboundTag": [
-          "socks-in"
-        ],
-        "port": 53,
-        "outboundTag": "dns-out",
-        "type": "field"
-      },
-      {
-        "inboundTag": [
-          "remote-dns"
-        ],
-        "balancerTag": "all",
-        "type": "field"
-      },
-      {
-        "inboundTag": [
-          "dns"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "geosite:category-ir"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "ip": [
-          "geoip:ir"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "network": "udp",
-        "outboundTag": "block",
-        "type": "field"
-      },
-      {
-        "network": "tcp",
-        "balancerTag": "all",
-        "type": "field"
-      }
     ],
-    "balancers": [
-      {
-        "tag": "all",
-        "selector": [
-          "prox"
+    "route": {
+        "rules": [
+            {
+                "ip_cidr": "172.18.0.2",
+                "action": "hijack-dns"
+            },
+            {
+                "clash_mode": "Direct",
+                "outbound": "direct"
+            },
+            {
+                "clash_mode": "Global",
+                "outbound": "✅ Selector"
+            },
+            {
+                "action": "sniff"
+            },
+            {
+                "protocol": "dns",
+                "action": "hijack-dns"
+            },
+            {
+                "network": "udp",
+                "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "geosite-malware",
+                    "geosite-phishing",
+                    "geosite-cryptominers"
+                ],
+                "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "geoip-malware",
+                    "geoip-phishing"
+                ],
+                "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "geosite-ir"
+                ],
+                "action": "route",
+                "outbound": "direct"
+            },
+            {
+                "rule_set": [
+                    "geoip-ir"
+                ],
+                "action": "route",
+                "outbound": "direct"
+            }
         ],
-        "strategy": {
-          "type": "leastPing"
+        "rule_set": [
+            {
+                "type": "remote",
+                "tag": "geosite-malware",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-malware",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-phishing",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-phishing",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-cryptominers",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-ir",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-ir",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs",
+                "download_detour": "direct"
+            }
+        ],
+        "auto_detect_interface": true,
+        "default_domain_resolver": {
+            "server": "dns-direct",
+            "strategy": "ipv4_only",
+            "rewrite_ttl": 60
         },
-        "fallbackTag": "prox-2"
-      }
-    ]
-  },
-  "stats": {},
-  "observatory": {
-    "subjectSelector": [
-      "prox"
-    ],
-    "probeUrl": "https://www.gstatic.com/generate_204",
-    "probeInterval": "30s",
-    "enableConcurrency": true
-  }
+        "final": "✅ Selector"
+    },
+    "ntp": {
+        "enabled": true,
+        "server": "time.cloudflare.com",
+        "server_port": 123,
+        "domain_resolver": "dns-direct",
+        "interval": "30m",
+        "write_to_system": false
+    },
+    "experimental": {
+        "cache_file": {
+            "enabled": true,
+            "store_fakeip": true
+        },
+        "clash_api": {
+            "external_controller": "127.0.0.1:9090",
+            "external_ui": "ui",
+            "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+            "external_ui_download_detour": "direct",
+            "default_mode": "Rule"
+        }
+    }
 }
