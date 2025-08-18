@@ -8280,8 +8280,8 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "t1.sanam.dpdns.org",
-            "path": "/trKOJugAtxuZbx43Xb?ed=2560"
+            "host": "rayan-config-telegram-t-1.rayan-dns.dpdns.org",
+            "path": "/trGMGgXSsPr82UmJHK?ed=2560"
           },
           "tlsSettings": {
             "allowInsecure": true,
@@ -8289,7 +8289,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "T1.sanAM.DPdNs.org"
+            "serverName": "RaYan-ConFiG-TELegRAm-t-1.rAyAN-Dns.dPdns.oRg"
           }
         },
         "tag": "proxy"
@@ -8657,8 +8657,8 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "t2.sanam.dpdns.org",
-            "path": "/tr5xMWF8s05u0iyCoZ?ed=2560"
+            "host": "rayan-config-telegram-t-2.rayan-dns.dpdns.org",
+            "path": "/trbHnY9qQGxuVAIgka?ed=2560"
           },
           "tlsSettings": {
             "allowInsecure": false,
@@ -8666,7 +8666,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "t2.SAnam.DpdNS.orG"
+            "serverName": "rAYan-CONFiG-telEgRAm-T-2.rAYAN-dns.dPdNS.orG"
           }
         },
         "tag": "proxy"
