@@ -57,7 +57,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "56497add-68ca-4500-b8e2-9f7003382bbe",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -73,7 +73,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "rAyaN-Ng-1.SanAm.DpdNs.OrG",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-1.MeDiCaLhIsToRy.fIlEgEaR-Sg.mE",
             "alpn": [
               "h2",
               "http/1.1"
@@ -84,7 +84,7 @@
           "wsSettings": {
             "path": "/@Rayan_Config",
             "headers": {
-              "Host": "rAyaN-Ng-1.SanAm.DpdNs.OrG"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-1.MeDiCaLhIsToRy.fIlEgEaR-Sg.mE"
             }
           },
           "sockopt": {
@@ -102,8 +102,8 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "6-8",
-            "interval": "1-2"
+            "length": "10-12",
+            "interval": "1-3"
           }
         },
         "streamSettings": {
@@ -399,7 +399,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "e97a0128-4785-4323-a2a5-dd01ce49d359",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -415,7 +415,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "RaYAn-Ng-2.sANam.dpDNs.ORg",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-2.MoHaMmAd-jAnAm.fIlEgEaR-Sg.mE",
             "alpn": [
               "h2",
               "http/1.1"
@@ -426,7 +426,7 @@
           "wsSettings": {
             "path": "/@Rayan_Config",
             "headers": {
-              "Host": "RaYAn-Ng-2.sANam.dpDNs.ORg"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-2.MoHaMmAd-jAnAm.fIlEgEaR-Sg.mE"
             }
           },
           "sockopt": {
@@ -444,8 +444,8 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "6-8",
-            "interval": "1-2"
+            "length": "10-12",
+            "interval": "1-5"
           }
         },
         "streamSettings": {
@@ -741,7 +741,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "9e7b3b9f-ab4b-4f2c-9529-2fc61840db40",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -757,7 +757,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "rAyaN-Ng-3.SanAm.DpdNs.OrG",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-3.AbAr-fArZ.FiLeGeAr-sG.Me",
             "alpn": [
               "h2",
               "http/1.1"
@@ -768,7 +768,7 @@
           "wsSettings": {
             "path": "/@Rayan_Config",
             "headers": {
-              "Host": "rAyaN-Ng-3.SanAm.DpdNs.OrG"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-3.AbAr-fArZ.FiLeGeAr-sG.Me"
             }
           },
           "sockopt": {
@@ -786,8 +786,8 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "6-8",
-            "interval": "1-2"
+            "length": "9-11",
+            "interval": "1-4"
           }
         },
         "streamSettings": {
@@ -1083,7 +1083,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "869a36bd-2982-47c6-9195-6d404bdeae9d",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -1099,7 +1099,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "rAyaN-Ng-4.SanAm.DpdNs.OrG",
+            "serverName": "rAyAn-cOnFiC-TeLeGrAm-eU-4.EsFaNdIaR.FiLeGeAr-sG.Me",
             "alpn": [
               "h2",
               "http/1.1"
@@ -1110,7 +1110,7 @@
           "wsSettings": {
             "path": "/@Rayan_Config",
             "headers": {
-              "Host": "rAyaN-Ng-4.SanAm.DpdNs.OrG"
+              "Host": "rAyAn-cOnFiC-TeLeGrAm-eU-4.EsFaNdIaR.FiLeGeAr-sG.Me"
             }
           },
           "sockopt": {
@@ -1128,7 +1128,7 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "6-8",
+            "length": "9-11",
             "interval": "1-2"
           }
         },
@@ -1425,7 +1425,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "db946e35-5553-4737-9ab5-9634a566266b",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -1441,7 +1441,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "rAyaN-Ng-5.SanAm.DpdNs.OrG",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-5.FaRaNgIs.fIlEgEaR-Sg.mE",
             "alpn": [
               "h2",
               "http/1.1"
@@ -1452,7 +1452,7 @@
           "wsSettings": {
             "path": "/@Rayan_Config",
             "headers": {
-              "Host": "rAyaN-Ng-5.SanAm.DpdNs.OrG"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-5.FaRaNgIs.fIlEgEaR-Sg.mE"
             }
           },
           "sockopt": {
@@ -1470,8 +1470,8 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "6-8",
-            "interval": "1-2"
+            "length": "8-12",
+            "interval": "1-5"
           }
         },
         "streamSettings": {
@@ -1767,7 +1767,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "258ab2cd-0489-4a8c-a076-e6c8b2327f34",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -1783,7 +1783,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "rAyaN-Ng-6.SanAm.DpdNs.OrG",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-6.AtEnAa.fIlEgEaR-Sg.mE",
             "alpn": [
               "h2",
               "http/1.1"
@@ -1794,7 +1794,7 @@
           "wsSettings": {
             "path": "/@Rayan_Config",
             "headers": {
-              "Host": "rAyaN-Ng-6.SanAm.DpdNs.OrG"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-6.AtEnAa.fIlEgEaR-Sg.mE"
             }
           },
           "sockopt": {
