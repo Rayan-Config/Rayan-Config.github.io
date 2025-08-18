@@ -2133,7 +2133,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2148,7 +2148,7 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-1.sanam.dpdns.org",
+            "host": "rAyAn-cOnFiG-TeLeGrAm-eU-1.RaYaN-DnS.DpDnS.OrG",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
@@ -2157,7 +2157,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-1.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-1.RaYaN-DnS.DpDnS.OrG"
           }
         },
         "tag": "prox-1"
@@ -2209,7 +2209,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2224,7 +2224,7 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-3.sanam.dpdns.org",
+            "host": "rAyAn-cOnFiG-TeLeGrAm-eU-3.RaYaN-DnS.DpDnS.OrG",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
@@ -2233,7 +2233,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-3.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-3.RaYaN-DnS.DpDnS.OrG"
           }
         },
         "tag": "prox-3"
@@ -2285,7 +2285,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2300,7 +2300,7 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-5.sanam.dpdns.org",
+            "host": "rAyAn-cOnFiG-TeLeGrAm-eU-5.RaYaN-DnS.DpDnS.OrG",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
@@ -2309,7 +2309,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-5.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-5.RaYaN-DnS.DpDnS.OrG"
           }
         },
         "tag": "prox-5"
@@ -2323,7 +2323,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2338,7 +2338,7 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-6.sanam.dpdns.org",
+            "host": "rAyAn-cOnFiG-TeLeGrAm-eU-6.RaYaN-DnS.DpDnS.OrG",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
@@ -2347,7 +2347,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-6.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-6.RaYaN-DnS.DpDnS.OrG"
           }
         },
         "tag": "prox-6"
@@ -2813,7 +2813,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2828,7 +2828,7 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-1.sanam.dpdns.org",
+            "host": "rAyAn-cOnFiG-TeLeGrAm-eU-1.RaYaN-DnS.DpDnS.OrG",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
@@ -2837,7 +2837,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-1.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-1.RaYaN-DnS.DpDnS.OrG"
           }
         },
         "tag": "prox-1"
@@ -2851,7 +2851,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2866,7 +2866,7 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-2.sanam.dpdns.org",
+            "host": "rAyAn-cOnFiG-TeLeGrAm-eU-2.RaYaN-DnS.DpDnS.OrG",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
@@ -2875,7 +2875,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-2.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-2.RaYaN-DnS.DpDnS.OrG"
           }
         },
         "tag": "prox-2"
@@ -2965,7 +2965,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "encryption": "none",
                   "level": 8
                 }
@@ -2980,7 +2980,7 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-5.sanam.dpdns.org",
+            "host": "rAyAn-cOnFiG-TeLeGrAm-eU-5.RaYaN-DnS.DpDnS.OrG",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
@@ -2989,7 +2989,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-5.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-5.RaYaN-DnS.DpDnS.OrG"
           }
         },
         "tag": "prox-5"
@@ -3003,7 +3003,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "encryption": "none",
                   "level": 8
                 }
@@ -3018,7 +3018,7 @@
             "domainStrategy": "UseIPv4v6"
           },
           "wsSettings": {
-            "host": "rayan-ng-6.sanam.dpdns.org",
+            "host": "rAyAn-cOnFiG-TeLeGrAm-eU-6.RaYaN-DnS.DpDnS.OrG",
             "path": "/?ed=2560"
           },
           "tlsSettings": {
@@ -3027,7 +3027,7 @@
             "alpn": [
               "http/1.1"
             ],
-            "serverName": "rAyAn-nG-6.SaNaM.DpDnS.OrG"
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-6.RaYaN-DnS.DpDnS.OrG"
           }
         },
         "tag": "prox-6"
@@ -3536,7 +3536,7 @@
                 {
                   "encryption": "none",
                   "flow": "",
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "level": 8,
                   "security": "auto"
                 }
@@ -3556,14 +3556,14 @@
             ],
             "fingerprint": "chrome",
             "publicKey": "",
-            "serverName": "r1.SaNaM.DpDnS.OrG",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-1.RaYaN-DnS.DpDnS.OrG",
             "shortId": "",
             "show": false,
             "spiderX": ""
           },
           "wsSettings": {
             "headers": {
-              "Host": "r1.SaNaM.DpDnS.OrG"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-1.RaYaN-DnS.DpDnS.OrG"
             },
             "path": "/?ed=2560"
           }
@@ -5136,7 +5136,7 @@
                 {
                   "encryption": "none",
                   "flow": "",
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "level": 8,
                   "security": "auto"
                 }
@@ -5156,14 +5156,14 @@
             ],
             "fingerprint": "chrome",
             "publicKey": "",
-            "serverName": "r3.SaNaM.DpDnS.OrG",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-3.RaYaN-DnS.DpDnS.OrG",
             "shortId": "",
             "show": false,
             "spiderX": ""
           },
           "wsSettings": {
             "headers": {
-              "Host": "r3.SaNaM.DpDnS.OrG"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-3.RaYaN-DnS.DpDnS.OrG"
             },
             "path": "/?ed=2560"
           }
@@ -5936,7 +5936,7 @@
                 {
                   "encryption": "none",
                   "flow": "",
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "level": 8,
                   "security": "auto"
                 }
@@ -5956,14 +5956,14 @@
             ],
             "fingerprint": "chrome",
             "publicKey": "",
-            "serverName": "r4.SaNaM.DpDnS.OrG",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-4.RaYaN-DnS.DpDnS.OrG",
             "shortId": "",
             "show": false,
             "spiderX": ""
           },
           "wsSettings": {
             "headers": {
-              "Host": "r4.SaNaM.DpDnS.OrG"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-4.RaYaN-DnS.DpDnS.OrG"
             },
             "path": "/?ed=2560"
           }
@@ -6736,7 +6736,7 @@
                 {
                   "encryption": "none",
                   "flow": "",
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "level": 8,
                   "security": "auto"
                 }
@@ -6756,14 +6756,14 @@
             ],
             "fingerprint": "chrome",
             "publicKey": "",
-            "serverName": "r5.SaNaM.DpDnS.OrG",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-5.RaYaN-DnS.DpDnS.OrG",
             "shortId": "",
             "show": false,
             "spiderX": ""
           },
           "wsSettings": {
             "headers": {
-              "Host": "r5.SaNaM.DpDnS.OrG"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-5.RaYaN-DnS.DpDnS.OrG"
             },
             "path": "/?ed=2560"
           }
@@ -7536,7 +7536,7 @@
                 {
                   "encryption": "none",
                   "flow": "",
-                  "id": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+                  "id": "a0bbc599-fa28-4b1a-9194-ec2ef5af001d",
                   "level": 8,
                   "security": "auto"
                 }
@@ -7556,14 +7556,14 @@
             ],
             "fingerprint": "chrome",
             "publicKey": "",
-            "serverName": "r6.SaNaM.DpDnS.OrG",
+            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-6.RaYaN-DnS.DpDnS.OrG",
             "shortId": "",
             "show": false,
             "spiderX": ""
           },
           "wsSettings": {
             "headers": {
-              "Host": "r6.SaNaM.DpDnS.OrG"
+              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-6.RaYaN-DnS.DpDnS.OrG"
             },
             "path": "/?ed=2560"
           }
