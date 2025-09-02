@@ -57,7 +57,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "56497add-68ca-4500-b8e2-9f7003382bbe",
+                  "id": "413036f7-ba28-4dd7-9eb3-031ba6cad6fd",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -73,7 +73,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-1.MeDiCaLhIsToRy.fIlEgEaR-Sg.mE",
+            "serverName": "rAyAn-01.RaYaN-CoNfIg-tEl-01.WoRkErS.DeV",
             "alpn": [
               "h2",
               "http/1.1"
@@ -84,7 +84,7 @@
           "wsSettings": {
             "path": "/@Rayan_Config",
             "headers": {
-              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-1.MeDiCaLhIsToRy.fIlEgEaR-Sg.mE"
+              "Host": "rAyAn-01.RaYaN-CoNfIg-tEl-01.WoRkErS.DeV"
             }
           },
           "sockopt": {
@@ -102,7 +102,7 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "10-12",
+            "length": "6-8",
             "interval": "1-3"
           }
         },
