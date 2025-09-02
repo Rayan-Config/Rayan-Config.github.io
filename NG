@@ -399,7 +399,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "21cf57f2-391f-4e7b-91ac-8b650e0a2f4c",
+                  "id": "413036f7-ba28-4dd7-9eb3-031ba6cad6fd",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -415,7 +415,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-2.PaRmIs.fIlEgEaR-Sg.mE",
+            "serverName": "rAyAn-03.RaYaN-CoNfIg-tEl-03.WoRkErS.DeV",
             "alpn": [
               "h2",
               "http/1.1"
@@ -424,9 +424,9 @@
             "show": false
           },
           "wsSettings": {
-            "path": "/@Rayan_Config",
+            "path": "/rayan-config-03.freeddns.com",
             "headers": {
-              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-2.PaRmIs.fIlEgEaR-Sg.mE"
+              "Host": "rAyAn-03.RaYaN-CoNfIg-tEl-03.WoRkErS.DeV"
             }
           },
           "sockopt": {
