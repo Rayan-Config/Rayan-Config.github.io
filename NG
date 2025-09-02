@@ -741,7 +741,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "9e7b3b9f-ab4b-4f2c-9529-2fc61840db40",
+                  "id": "413036f7-ba28-4dd7-9eb3-031ba6cad6fd",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -757,7 +757,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-3.AbAr-fArZ.FiLeGeAr-sG.Me",
+            "serverName": "rAyAn-05.RaYaN-CoNfIg-tEl-05.WoRkErS.DeV",
             "alpn": [
               "h2",
               "http/1.1"
@@ -766,9 +766,9 @@
             "show": false
           },
           "wsSettings": {
-            "path": "/@Rayan_Config",
+            "path": "/pyip=rayan-config-05.dnsrd.com",
             "headers": {
-              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-3.AbAr-fArZ.FiLeGeAr-sG.Me"
+              "Host": "rAyAn-05.RaYaN-CoNfIg-tEl-05.WoRkErS.DeV"
             }
           },
           "sockopt": {
