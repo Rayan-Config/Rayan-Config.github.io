@@ -82,7 +82,7 @@
             "show": false
           },
           "wsSettings": {
-            "path": "/@Rayan_Config",
+            "path": "/pyip=rayan-config-01.dns-stuff.com",
             "headers": {
               "Host": "rAyAn-01.RaYaN-CoNfIg-tEl-01.WoRkErS.DeV"
             }
