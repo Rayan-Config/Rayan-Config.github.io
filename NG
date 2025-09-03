@@ -444,7 +444,7 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "10-12",
+            "length": "4-8",
             "interval": "1-5"
           }
         },
@@ -786,7 +786,7 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "9-11",
+            "length": "5-8",
             "interval": "1-4"
           }
         },
@@ -1128,7 +1128,7 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "9-11",
+            "length": "4-8",
             "interval": "1-2"
           }
         },
@@ -1425,7 +1425,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "db946e35-5553-4737-9ab5-9634a566266b",
+                  "id": "413036f7-ba28-4dd7-9eb3-031ba6cad6fd",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -1441,7 +1441,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "rAyAn-cOnFiG-TeLeGrAm-eU-5.FaRaNgIs.fIlEgEaR-Sg.mE",
+            "serverName": "rAyAn-09.RaYaN-CoNfIg-tEl-09.WoRkErS.DeV",
             "alpn": [
               "h2",
               "http/1.1"
@@ -1450,9 +1450,9 @@
             "show": false
           },
           "wsSettings": {
-            "path": "/@Rayan_Config",
+            "path": "/pyip=rayan-config-03.freeddns.com",
             "headers": {
-              "Host": "rAyAn-cOnFiG-TeLeGrAm-eU-5.FaRaNgIs.fIlEgEaR-Sg.mE"
+              "Host": "rAyAn-09.RaYaN-CoNfIg-tEl-09.WoRkErS.DeV"
             }
           },
           "sockopt": {
@@ -1470,7 +1470,7 @@
           "domainStrategy": "AsIs",
           "fragment": {
             "packets": "tlshello",
-            "length": "8-12",
+            "length": "5-8",
             "interval": "1-5"
           }
         },
