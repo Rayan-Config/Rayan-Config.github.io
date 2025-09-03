@@ -1596,7 +1596,7 @@
               "port": 443,
               "users": [
                 {
-                  "id": "eaa140af-47da-4201-a1e2-004833106835",
+                  "id": "413036f7-ba28-4dd7-9eb3-031ba6cad6fd",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -1612,7 +1612,7 @@
           "security": "tls",
           "tlsSettings": {
             "allowInsecure": true,
-            "serverName": "raYAn-nG-5.saMAn.DpdNS.orG",
+            "serverName": "rAyAn-10.RaYaN-CoNfIg-tEl-10.WoRkErS.DeV",
             "alpn": [
               "h2",
               "http/1.1"
@@ -1621,9 +1621,9 @@
             "show": false
           },
           "wsSettings": {
-            "path": "/@Rayan_Config",
+            "path": "/pyip=rayan-config-04.myddns.com",
             "headers": {
-              "Host": "raYAn-nG-5.saMAn.DpdNS.orG"
+              "Host": "rAyAn-10.RaYaN-CoNfIg-tEl-10.WoRkErS.DeV"
             }
           },
           "sockopt": {
