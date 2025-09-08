@@ -1,5 +1,5 @@
 {
-  "remarks": "🌴 5 - BPB MHI - CF VLS 🔥",
+  "remarks": "🌴 6 - BPB MDR - CF VLS 🔥",
   "dns": {
     "hosts": {
       "geosite:category-ads-all": "127.0.0.1",
@@ -31,60 +31,9 @@
       ]
     },
     "servers": [
-      "8.8.8.8","8.8.4.4","1.1.1.1","1.0.0.1",
-      {
-        "address": "8.8.8.8",
-        "domains": [
-          "domain:googleapis.cn",
-          "domain:gstatic.com"
-        ],
-        "port": 53
-      },
-      {
-        "address": "1.1.1.1",
-        "domains": [
-          "domain:googleapis.cn",
-          "domain:gstatic.com"
-        ],
-        "port": 53
-      },
-      {
-        "address": "8.8.4.4",
-        "domains": [
-          "geosite:private",
-          "domain:ir",
-          "geosite:category-ir",
-          "geosite:cn",
-          "geosite:geolocation-cn",
-          "domain:https://8.8.8.8/dns-query",
-          "domain:tcp://8.8.8.8",
-          "domain:https://1.1.1.1/dns-query",
-          "domain:udp://1.1.1.1"
-        ],
-        "expectIPs": [
-          "geoip:cn"
-        ],
-        "port": 53
-      },
-      {
-        "address": "1.0.0.1",
-        "domains": [
-          "geosite:private",
-          "domain:ir",
-          "geosite:category-ir",
-          "geosite:cn",
-          "geosite:geolocation-cn",
-          "domain:https://8.8.8.8/dns-query",
-          "domain:tcp://8.8.8.8",
-          "domain:https://1.1.1.1/dns-query",
-          "domain:udp://1.1.1.1"
-        ],
-        "expectIPs": [
-          "geoip:cn"
-        ],
-        "port": 53
-      }
-    ]
+      "https://8.8.8.8/dns-query"
+    ],
+    "tag": "dns-module"
   },
   "inbounds": [
     {
@@ -98,22 +47,12 @@
       },
       "sniffing": {
         "destOverride": [
-          "http",
-          "tls"
+          "fakedns"
         ],
         "enabled": true,
         "routeOnly": false
       },
       "tag": "socks"
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 10809,
-      "protocol": "http",
-      "settings": {
-        "userLevel": 8
-      },
-      "tag": "http"
     }
   ],
   "log": {
@@ -123,9 +62,7 @@
     {
       "mux": {
         "concurrency": -1,
-        "enabled": false,
-        "xudpConcurrency": 8,
-        "xudpProxyUDP443": ""
+        "enabled": false
       },
       "protocol": "vless",
       "settings": {
@@ -189,19 +126,17 @@
     "domainStrategy": "AsIs",
     "rules": [
       {
-        "ip": [
-          "8.8.8.8","1.1.1.1"
+        "inboundTag": [
+          "domestic-dns"
         ],
-        "outboundTag": "proxy",
-        "port": "53",
+        "outboundTag": "direct",
         "type": "field"
       },
       {
-        "ip": [
-          "8.8.4.4","1.0.0.1"
+        "inboundTag": [
+          "dns-module"
         ],
-        "outboundTag": "direct",
-        "port": "53",
+        "outboundTag": "proxy",
         "type": "field"
       },
       {
@@ -234,20 +169,6 @@
       },
       {
         "domain": [
-          "geosite:private"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "ip": [
-          "geoip:private"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
           "domain:ir"
         ],
         "outboundTag": "direct",
@@ -263,27 +184,6 @@
       {
         "ip": [
           "geoip:ir"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "ip": [
-          "geoip:cn"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "geosite:cn"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "geosite:geolocation-cn"
         ],
         "outboundTag": "direct",
         "type": "field"
@@ -368,6 +268,20 @@
       {
         "ip": [
           "2606:4700:4700::1001"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:private"
         ],
         "outboundTag": "direct",
         "type": "field"
